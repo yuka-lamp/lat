@@ -1,0 +1,183 @@
+/*--ナビレイアウト調整--*/
+header {}
+
+header>.wrap>nav>ul {
+  width: 60%
+}
+
+header nav {
+  right: 0 !important;
+  width: 100% !important;
+  height: 80px !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+  overflow: inherit !important;
+}
+
+/*--ナビ装飾追加--*/
+.drawer-menu-item {
+  font-size: 0.9rem;
+  color: #707070
+}
+
+header>.wrap>nav>ul>li {
+  position: relative;
+}
+
+header>.wrap>nav>ul>li>a::before {
+  content: '□';
+  color: #E6EBE1;
+  margin-right: 10px;
+}
+
+header>.wrap>nav>ul>li:hover>a::before {
+  content: '■';
+  color: #7FC600
+}
+
+/*--ナビお問い合わせボタン--*/
+header>.wrap>nav>ul>li:last-child {
+  position: relative;
+  border: 2px solid #7FC600;
+  margin: 0 0 0 1rem;
+}
+
+header>.wrap>nav>ul>li:last-child a {
+  color: #7FC600;
+  font-weight: bold;
+  padding: .75rem 1.7rem
+}
+
+header>.wrap>nav>ul>li:last-child:hover {
+  background: #7FC600;
+}
+
+header>.wrap>nav>ul>li:last-child:hover a {
+  color: #fff
+}
+
+header>.wrap>nav>ul>li:last-child>a::before, header>.wrap>nav>ul>li:last-child:hover>a::before {
+  content: '';
+  margin: 0
+}
+
+/*--▼印削除--*/
+.drawer-caret {
+  display: none !important
+}
+
+/*--ドロップダウンメニュー内--*/
+.drawer-dropdown-menu {
+  position: absolute;
+}
+
+.drawer-dropdown-menu li {
+  padding: 12px;
+  width: 300px;
+  box-sizing: border-box;
+  background: #F3F7EF;
+  border-bottom: 2px solid #EBF0E6;
+}
+
+.drawer-dropdown-menu li:hover {
+  background: #EBF0E6;
+}
+
+.drawer-dropdown-menu li:last-child {
+  border-bottom: none
+}
+
+.drawer-dropdown-menu li a {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  transition: color 0.3s ease 0.5s;
+}
+
+.drawer-dropdown-menu li a img, .drawer-dropdown-menu li a p {
+  width: 50%
+}
+
+.drawer-dropdown-menu li a p {
+  margin-left: 15px
+}
+
+/*--ハンバーガーアイコン--*/
+.drawer-hamburger-icon, .drawer-hamburger-icon::after, .drawer-hamburger-icon::before {
+  background-color: #7FC600
+}
+
+.drawer-hamburger {
+  padding: 23px .75rem 33px
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:1180px) {
+
+  /*--ナビ崩れの調整--*/
+  header>.wrap>nav>ul {
+    width: 70%
+  }
+}
+
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  header {
+    padding: 18px 15px !important
+  }
+
+  header>.wrap {
+    padding: 0
+  }
+
+  header>.wrap>nav>ul {
+    width: 100%
+  }
+
+  header>.wrap>a>img {
+    width: 255px
+  }
+
+  header nav {
+    right: -100vw !important;
+    height: 100% !important;
+    width: 50% !important;
+    align-items: flex-start;
+    padding: 40px 0;
+    overflow: scroll !important;
+  }
+
+  .drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-nav, .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+    right: 0 !important;
+  }
+
+  /*--ナビ装飾追加--*/
+  header>.wrap>nav>ul>li>a {
+    border-bottom: 2px solid #EBF0E6;
+  }
+
+  header>.wrap>nav>ul>li>a::before, header>.wrap>nav>ul>li:hover>a::before {
+    content: '';
+    margin-right: 0;
+  }
+
+  header>.wrap>nav>ul>li:last-child {
+    margin: 10px
+  }
+
+  /*--ドロップダウンメニュー--*/
+  .drawer-dropdown-menu {
+    position: inherit;
+  }
+
+  .drawer-menu-item {
+    font-size: 1rem
+  }
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}

@@ -1,0 +1,79 @@
+/*--footerレイアウト--*/
+footer {
+  width: 100%
+}
+
+footer>div {
+  border-top: 2px solid #EBF0E6;
+  width: 100%
+}
+
+/*--ロゴ部分--*/
+footer .left a {
+  display: block;
+}
+
+footer .left a img {
+  width: 250px
+}
+
+/*--リンク一覧--*/
+footer .right p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0 1rem 10px 0
+}
+
+footer .right p::before {
+  content: url('../images/common/arrow_01.png');
+  margin-right: 10px
+}
+
+footer .right ul {
+  width: 120px;
+  margin: 0
+}
+
+footer .right div:last-child ul:nth-child(2), footer .right div:last-child ul:nth-child(3) {
+  width: 170px;
+}
+
+footer .right ul li {
+  margin-bottom: 10px
+}
+
+footer .right ul li::before {
+  content: url('../images/common/arrow_02.png');
+  margin-right: 10px
+}
+
+footer .right ul li a {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/*--.small調整--*/
+.small {
+  padding: 6px 0;
+  color: #8F8F8F;
+}
+
+.small .flex {
+  align-items: center;
+}
+
+.small p {
+  margin: 0;
+  font-size: 12px
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:1180px) {}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}

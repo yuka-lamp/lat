@@ -5,7 +5,7 @@ function twpp_enqueue_styles()
 {
     wp_enqueue_style(
         'main-style',
-        get_template_directory_uri().'/lib/css/style.min.css',
+        get_template_directory_uri().'/lib/css/style.css',
         [],
         '1.0.0',
         'all'

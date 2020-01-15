@@ -1,0 +1,141 @@
+body {
+  font-family: 'Didact Gothic', sans-serif, 'Noto Sans JP', 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+  font-size: 100%;
+  letter-spacing: .1rem;
+  position: relative;
+  text-transform: uppercase;
+  color: #333
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: .1rem;
+  line-height: 2.1
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 150%
+}
+
+h3 {
+  font-size: 140%
+}
+
+.strong {
+  font-size: 115%
+}
+
+.min {
+  font-size: 90%;
+}
+
+a {
+  cursor: pointer !important;
+}
+
+a:hover {
+  text-decoration: none!important
+}
+
+li>a {
+  display: block;
+}
+
+/*--------------------------------------------------------------layout*/
+.sec {
+  padding: 60px 0
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.sp-only {
+  display: none !important;
+}
+
+.fixed-left {
+  width: 5%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0D0D0D;
+  overflow: hidden;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 96
+}
+
+main {
+  width: 95%;
+  overflow: hidden;
+  margin-left: 5%
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+  .sp-only {
+    display: block !important;
+  }
+  .pc-only {
+    display: none !important;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  main {
+    width: 100%;
+    margin: 0
+  }
+}
+/*--------------------------------------------------------------余白*/
+.p-120 {
+  padding: 120px 0
+}
+.p-60 {
+  padding: 60px 0
+}
+
+.p-30 {
+  padding: 30px 0
+}
+.p-20 {
+  padding: 20px
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+  .p-120 {
+    padding: 60px 0
+  }
+  .p-60 {
+    padding: 30px 0
+  }
+}
+/*--------------------------------------------------------------color*/
+
+.main-color {
+  color: #7FC600
+}

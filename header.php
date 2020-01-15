@@ -1,6 +1,8 @@
 <?php
 $home = esc_url(home_url());
-$wp_url = get_template_directory_uri(); ?>
+$wp_url = get_template_directory_uri();
+$slug      = $post_data->post_name;
+ ?>
 <!DOCTYPE HTML>
 <html lang="ja">
 <head>
@@ -10,47 +12,74 @@ $wp_url = get_template_directory_uri(); ?>
 <?php if (!is_user_logged_in()): ?>
 <!-- ここにGAトラッキングタグ -->
 <?php endif; ?>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/first.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/common.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/header.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/footer.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/front.css">
 </head>
-<body>
+<body class="drawer drawer--right">
 
 <!-- ヘッダー -->
 <header id="header">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="<?php echo $home; ?>/">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="<?php echo $home; ?>/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+  <div class="wrap">
+    <a class="sp-only" href="<?php echo $home ?>">
+      <img src="<?php echo $wp_url ?>/lib/images/common/logo.png" alt="リードアーキテクトロゴ">
+    </a>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only"></span>
+        <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav flex" role="navigation">
+      <a class="pc-only" href="<?php echo $home ?>">
+        <img src="<?php echo $wp_url ?>/lib/images/common/logo.png" alt="リードアーキテクトロゴ">
+      </a>
+      <ul class="drawer-menu flex">
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">サービス紹介<span class="drawer-caret"></span></a>
+          <ul class="drawer-dropdown-menu">
+            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/order">
+              <img src="<?php echo $wp_url ?>/lib/images/common/nav_01.png" alt="注文建築">
+              <p>注文建築</p>
+            </a></li>
+            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/reform">
+              <img src="<?php echo $wp_url ?>/lib/images/common/nav_02.png" alt="リフォーム">
+              <p>リフォーム</p>
+            </a></li>
+            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/shop">
+              <img src="<?php echo $wp_url ?>/lib/images/common/nav_03.png" alt="店舗建築">
+              <p>店舗建築</p>
+            </a></li>
+            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/large">
+              <img src="<?php echo $wp_url ?>/lib/images/common/nav_04.png" alt="大型建築">
+              <p>大型建築</p>
+            </a></li>
+          </ul>
+        </li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社情報</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <!-- ヘッダー終了 -->
+
+<!-- メインビジュアル開始 -->
+<?php if (is_home() || is_front_page()): ?>
+<section id="mv">
+  <div class="wrap">
+  </div>
+<div class="callout-square"></div>
+</section>
+
+<?php else: ?>
+
+<?php endif; ?>
+
+<!-- メインビジュアル終了 -->
 
 <!-- メインコンテンツ -->
 <main>
