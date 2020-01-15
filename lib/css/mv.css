@@ -5,6 +5,10 @@
   margin-top: 80px
 }
 
+.mv h2 {
+  font-size: 2rem
+}
+
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
 
@@ -32,7 +36,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  border-left:6px solid #7FC600;
+  border-left: 6px solid #7FC600;
   padding: 0 0 0 2.5rem
 }
 
@@ -62,9 +66,11 @@
   #mv-front .txt-wrap {
     padding: 0 0 0 1rem
   }
+
   #mv-front .txt-wrap h2 {
     font-size: 3rem;
   }
+
   #mv-front {
     background: url('../images/front/mv_sp.png');
     background-size: cover;
@@ -75,14 +81,15 @@
 /*------------------------------------------------------
 下層MV 画像なし
 ------------------------------------------------------*/
-
 #submv_imgnone {
   text-align: center;
+  padding: 60px 0
 }
 
 #submv_imgnone h2 {
   display: inline-block;
-  font-size: 2rem
+  font-size: 2rem;
+  margin: 0
 }
 
 #submv_imgnone .wrap::after {
@@ -91,7 +98,7 @@
   width: 75px;
   height: 3px;
   background: #7FC600;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
 }
 
 /*--------------------------------------------レスポンシブ*/
@@ -104,6 +111,42 @@
 }
 
 @media(max-width:480px) {
+  /*--スマホたて--*/
+}
 
+/*------------------------------------------------------
+下層MV 画像あり
+------------------------------------------------------*/
+#submv_img {
+  width: 100%;
+  height: 240px;
+  background: url('../images/order/mv.png');
+  background-position: right;
+  background-size: cover;
+  position: relative;
+}
+
+#submv_img h2 {
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  margin: -1rem 0 0 0;
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #submv_img {
+    height: 180px;
+  }
+  #submv_img h2 {
+    text-align: center;
+    left: 0;
+    width: 100%
+  }
+}
+
+@media(max-width:480px) {
   /*--スマホたて--*/
 }
