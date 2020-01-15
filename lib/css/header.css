@@ -118,7 +118,7 @@ header>.wrap>nav>ul>li:last-child>a::before, header>.wrap>nav>ul>li:last-child:h
 
   /*--ナビ崩れの調整--*/
   header>.wrap>nav>ul {
-    width: 70%
+    width: 90%
   }
 }
 

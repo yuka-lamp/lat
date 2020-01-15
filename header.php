@@ -13,11 +13,13 @@ $slug      = $post_data->post_name;
 <!-- ここにGAトラッキングタグ -->
 <?php endif; ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/first.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/common.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/header.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/footer.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/front.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/mv.css">
 </head>
 <body class="drawer drawer--right">
 
@@ -69,11 +71,16 @@ $slug      = $post_data->post_name;
 
 <!-- メインビジュアル開始 -->
 <?php if (is_home() || is_front_page()): ?>
-<section id="mv">
-  <div class="wrap">
+<section id="mv-front" class="mv">
+  <div class="txt-wrap">
+    <p>スタッフ全員が建築資格を持つ</p>
+    <h2>技術者集団。</h2>
+    <div class="img-wrap">
+      <img src="<?php echo $wp_url ?>/lib/images/front/mv_ttl.svg" alt="スタッフ全員が建築資格を持つ技術者集団。">
+    </div>
   </div>
-<div class="callout-square"></div>
 </section>
+<?php get_template_part( 'contact' ); ?>
 
 <?php else: ?>
 

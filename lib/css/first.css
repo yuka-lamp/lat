@@ -812,6 +812,7 @@ h3.service-ttl span {
 #header {
   position: fixed;
   z-index: 1000;
+  top: 0;
   left: 0;
   box-sizing: border-box;
   width: 100%;

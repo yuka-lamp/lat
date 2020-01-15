@@ -1,5 +1,5 @@
 body {
-  font-family: 'Didact Gothic', sans-serif, 'Noto Sans JP', 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+  font-family: 'Oxygen', sans-serif, 'Noto Sans JP', 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
   font-size: 100%;
   letter-spacing: .1rem;
   position: relative;
@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-  text-decoration: none!important
+  text-decoration: none !important
 }
 
 li>a {
@@ -90,13 +90,16 @@ main {
 }
 
 @media(max-width:768px) {
+
   /*--スマホよこ--*/
   .sp-only {
     display: block !important;
   }
+
   .pc-only {
     display: none !important;
   }
+
   .flex {
     flex-wrap: wrap;
   }
@@ -110,32 +113,162 @@ main {
     margin: 0
   }
 }
+
 /*--------------------------------------------------------------余白*/
+.m-120 {
+  margin: 120px 0
+}
+
+.m-60 {
+  margin: 60px 0
+}
+
+.mt-60 {
+  margin-top: 60px 0
+}
+
+.mb-60 {
+  margin-bottom: 60px 0
+}
+
+.m-30 {
+  margin: 30px 0
+}
+
+.mt-30 {
+  margin-top: 30px 0
+}
+
+.mb-30 {
+  margin-bottom: 30px 0
+}
+
+.m-20 {
+  margin: 20px
+}
+
 .p-120 {
   padding: 120px 0
 }
+
 .p-60 {
   padding: 60px 0
+}
+
+.pt-60 {
+  padding-top: 60px 0
+}
+
+.pb-60 {
+  padding-bottom: 60px 0
 }
 
 .p-30 {
   padding: 30px 0
 }
+
+.pt-30 {
+  padding-top: 30px 0
+}
+
+.pb-30 {
+  padding-bottom: 30px 0
+}
+
 .p-20 {
   padding: 20px
 }
 
 @media(max-width:768px) {
+
   /*--スマホよこ--*/
+  .m-120 {
+    margin: 60px 0
+  }
+
+  .m-60 {
+    margin: 30px 0
+  }
+
+  .mt-60 {
+    margin-top: 30px 0
+  }
+
+  .mb-60 {
+    margin-bottom: 30px 0
+  }
+
   .p-120 {
     padding: 60px 0
   }
+
   .p-60 {
     padding: 30px 0
   }
-}
-/*--------------------------------------------------------------color*/
 
+  .pt-60 {
+    padding-top: 30px 0
+  }
+
+  .pb-60 {
+    padding-bottom: 30px 0
+  }
+}
+
+/*--------------------------------------------------------------color*/
 .main-color {
   color: #7FC600
+}
+
+.gray {
+  color: #8F8F8F
+}
+
+/*--------------------------------------------------------------パーツ*/
+.btn a, #recruit-form .form-wrap button, .form-wrap input[type="submit"] {
+  border-radius: 0;
+  box-shadow: none;
+  background: #333;
+  color: #fff;
+  position: relative;
+  min-width: 300px;
+}
+
+.btn a:hover {
+  color: #333;
+  background: #fff
+}
+
+.btn a::after {
+  content: url('../images/common/arrow_02.png');
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin-top: -5px;
+}
+
+/*--------------------------------------------------------------お問い合わせ*/
+#contact {
+  background: url('../images/common/contact_bg.png');
+  background-repeat: repeat;
+}
+
+#contact .wrap {
+  width: 680px;
+  background: #fff
+}
+
+#contact .main-color {
+  font-size: 1rem
+}
+
+#contact h2 {
+  margin: 0
+}
+
+@media(max-width:768px) {
+  #contact .wrap {
+    background: none;
+    padding: 2rem 0
+  }
 }

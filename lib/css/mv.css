@@ -1,0 +1,89 @@
+/*------------------------------------------------------
+共通
+------------------------------------------------------*/
+.mv {
+  margin-top: 80px
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  .mv {
+    margin-top: 70px
+  }
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
+
+/*------------------------------------------------------
+トップページ
+------------------------------------------------------*/
+#mv-front {
+  background: url('../images/front/mv.png');
+  background-size: cover;
+  height: 45vw;
+  position: relative;
+}
+
+#mv-front .txt-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left:6px solid #7FC600;
+  padding: 0 0 0 2.5rem
+}
+
+#mv-front .txt-wrap h2 {
+  font-size: 4rem;
+  margin: 0;
+  letter-spacing: 6px;
+}
+
+#mv-front .txt-wrap p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #mv-front {
+    height: 430px;
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #mv-front .txt-wrap {
+    padding: 0 0 0 1rem
+  }
+  #mv-front .txt-wrap h2 {
+    font-size: 3rem;
+  }
+  #mv-front {
+    background: url('../images/front/mv_sp.png');
+    background-size: cover;
+    height: 140vw;
+  }
+}
+
+/*------------------------------------------------------
+お問い合せ
+------------------------------------------------------*/
+
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+}
