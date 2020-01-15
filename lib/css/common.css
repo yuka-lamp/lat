@@ -236,9 +236,13 @@ li>a {
 .btn a::after {
   content: url('../images/common/arrow_02.png');
   position: absolute;
-  top: 10px;
+  top: 50%;
   right: 15px;
   margin-top: -5px;
+}
+
+.link {
+  font-size: 0.8rem
 }
 
 /*--------------------------------------------------------------お問い合わせ*/
@@ -264,5 +268,60 @@ li>a {
   #contact .wrap {
     background: none;
     padding: 2rem 0
+  }
+}
+
+/*--------------------------------------------------------------装飾*/
+.ttl2 {
+  font-size: 2rem
+}
+
+.ttl2 span {
+  border-bottom: solid 3px #7FC600;
+  padding-bottom: 5px
+}
+
+.ttl3 h2 {
+  text-transform: uppercase;
+  border-right: solid 3px #7FC600;
+  padding-right: 2rem;
+  font-size: 40px;
+  display: inline-block;
+  margin: 0
+}
+
+.ttl3 p {
+  display: inline-block;
+  margin-left: 2rem;
+  line-height: 1.5rem
+}
+
+@media(max-width:480px) {
+  .ttl3 h2 {
+    color: #7FC600;
+    font-size: 30px;
+    border: none;
+    display: block;
+  }
+
+  .ttl3 p {
+    margin: 1rem 0 0 0;
+  }
+}
+
+.layout-01 .under p {
+  margin: 30px 0 0 0;
+  width: 45%
+}
+
+@media(max-width:768px) {
+  .layout-01 .under p {
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media(max-width:480px) {
+  .layout-01 .under p {
+    width: 100%
   }
 }
