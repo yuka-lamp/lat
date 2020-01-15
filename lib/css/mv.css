@@ -73,14 +73,34 @@
 }
 
 /*------------------------------------------------------
-お問い合せ
+下層MV 画像なし
 ------------------------------------------------------*/
 
+#submv_imgnone {
+  text-align: center;
+}
+
+#submv_imgnone h2 {
+  display: inline-block;
+  font-size: 2rem
+}
+
+#submv_imgnone .wrap::after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: #7FC600;
+  margin: 60px auto;
+}
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
+  #submv_imgnone .wrap::after {
+    margin: 30px auto;
+  }
 }
 
 @media(max-width:480px) {

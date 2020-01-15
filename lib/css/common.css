@@ -77,12 +77,6 @@ li>a {
   z-index: 96
 }
 
-main {
-  width: 95%;
-  overflow: hidden;
-  margin-left: 5%
-}
-
 .flex {
   display: flex;
   justify-content: space-between;
