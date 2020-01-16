@@ -72,10 +72,23 @@ if (!is_home() && !is_front_page()) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<script type="text/javascript" src="<?php echo $wp_url ?>/lib/js/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function() {
+  /*--drawer設定--*/
   $('.drawer').drawer();
+  /*--slick初期化--*/
+  $('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:0,
+    dots:false,
+    arrows:false,
+    slidesToShow:6,
+    slidesToScroll:1,
+    cssEase: 'linear',
+    speed: 5000,
+  });
 });
 </script>
 </html>

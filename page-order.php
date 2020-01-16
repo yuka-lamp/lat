@@ -41,5 +41,16 @@ get_header(); ?>
     </ul>
   </div>
 </section>
+<section id="slide" class="sec">
+  <ul class="slider">
+    <li><img src="<?php echo $wp_url ?>/lib/images/order/slide/01.png" alt="スライドショー画像"></li>
+    <li><img src="<?php echo $wp_url ?>/lib/images/order/slide/02.png" alt="スライドショー画像"></li>
+    <li><img src="<?php echo $wp_url ?>/lib/images/order/slide/03.png" alt="スライドショー画像"></li>
+    <li><img src="<?php echo $wp_url ?>/lib/images/order/slide/04.png" alt="スライドショー画像"></li>
+    <li><img src="<?php echo $wp_url ?>/lib/images/order/slide/05.png" alt="スライドショー画像"></li>
+    <li><img src="<?php echo $wp_url ?>/lib/images/order/slide/06.png" alt="スライドショー画像"></li>
+    <li><img src="<?php echo $wp_url ?>/lib/images/order/slide/07.png" alt="スライドショー画像"></li>
+  </ul>
+</section>
 <?php get_template_part( 'gallery' ); ?>
 <?php get_footer();
