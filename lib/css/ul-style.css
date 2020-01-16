@@ -1,26 +1,29 @@
 /*------------------------------------------------------
-注文建築
+リストスタイル01
 ------------------------------------------------------*/
-#select ul li {
-  position: relative;
+ul.ul-style-01 li {
+  text-align: center;
 }
 
-#select ul li a .txt-wrap {
+ul.ul-style-01 li .txt-wrap {
   border-top: 1px solid #EBF0E6;
   border-left: 1px solid #EBF0E6;
   border-right: 1px solid #EBF0E6;
   display: flow-root;
+  padding: 0 20px 20px 20px;
 }
 
-#select ul li a .txt-wrap>p:first-child {
-  position: absolute;
+ul.ul-style-01 li .txt-wrap>h2 {
+  margin: 0 0 30px 0;
+}
+
+ul.ul-style-01 li .txt-wrap>p:first-child {
+  position: relative;
   top: -1.7rem;
   font-size: 26px;
-  display: block;
-  width: 100%;
 }
 
-#select ul li a .txt-wrap>p:nth-child(2) {
+ul.ul-style-01 li .txt-wrap>p:nth-child(2) {
   font-size: 1rem;
   margin-top: 1rem
 }
@@ -31,9 +34,7 @@
 }
 
 @media(max-width:480px) {
-
-  /*--スマホたて--*/
-  #about .wrap {
-    padding: 0 15px
+  ul.ul-style-01 li {
+    margin-bottom: 2rem
   }
 }

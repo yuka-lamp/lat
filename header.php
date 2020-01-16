@@ -15,6 +15,7 @@ $slug      = $post_data->post_name;
 <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick.css" />
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick-theme.css" />
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/first.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/common.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/header.css">
@@ -23,7 +24,9 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/mv.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sec-contact.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sec-gallery.css">
-<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/order.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/ul-style.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/health.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/design.css">
 </head>
 <body class="drawer drawer--right">
 

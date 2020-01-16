@@ -89,6 +89,18 @@ $(document).ready(function() {
     cssEase: 'linear',
     speed: 5000,
   });
+  $('.slider-02').slick({
+    autoplay:false,
+    autoplaySpeed:3000,
+    slidesToShow:1,
+    slidesToScroll:1,
+    dots:true,
+    customPaging: function(slider, i) {
+    return $('<button type="button" />').text(i + 1);
+  },
+    prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_l.png" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">'
+  });
 });
 </script>
 </html>

@@ -1,0 +1,188 @@
+/*------------------------------------------------------
+about-0
+------------------------------------------------------*/
+#about-0 ul.ul-style-01 li {
+  width: 32%;
+}
+
+/*--スライドショー--*/
+.layout-02 ul.slider-02>.slick-list>.slick-track>li {
+  padding: 0 90px;
+  display: flex !important;
+  align-items: center;
+  position: relative;
+}
+
+.layout-02 ul.slider-02 .img-wrap {
+  width: 55%
+}
+
+.layout-02 ul.slider-02 .txt-wrap {
+  width: 40%
+}
+
+.layout-02 ul.slider-02 .num {
+  background: #EBF0E6;
+  font-size: 1.15rem;
+  padding: 6px 10px;
+  display: inline-block;
+}
+
+.layout-02 ul.slider-02 h4 {
+  margin: 15px 0;
+  font-size: 1.15rem
+}
+
+.layout-02 ul.slider-02 .img-wrap, .layout-02 ul.slider-02 .img-wrap img {
+  margin: 0
+}
+
+.next-arrow, .prev-arrow {
+  background: #333;
+  padding: 20px 10px;
+  position: absolute;
+  top: 50%;
+  margin: -25px 0 0 0;
+  z-index: 1
+}
+
+.next-arrow {
+  left: auto;
+  right: 10px;
+}
+
+.prev-arrow {
+  left: 10px;
+  right: auto;
+}
+
+.slick-dotted.slick-slider {
+  margin: 0 0 60px 0;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+  width: 20px !important
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  .layout-02 ul.slider-02>.slick-list>.slick-track>li {
+    padding: 0 20px;
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  .layout-02 ul.slider-02>.slick-list>.slick-track>li {
+    padding: 0 10px;
+  }
+
+  #about-0 ul.ul-style-01 li {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .layout-02 ul.slider-02 .img-wrap {
+    width: 100%
+  }
+
+  .layout-02 ul.slider-02 .txt-wrap {
+    width: 100%;
+    margin-top: 30px
+  }
+
+  .next-arrow {
+    left: auto;
+    right: -5px;
+    top: 30%;
+  }
+
+  .prev-arrow {
+    left: -5px;
+    right: auto;
+    top: 30%;
+  }
+}
+
+/*------------------------------------------------------
+doctor
+------------------------------------------------------*/
+#doctor .layout-02 {
+  margin-top: 60px;
+}
+
+#doctor .layout-02 .btn {
+  position: relative;
+  top: 2rem;
+  text-align: center;
+}
+
+#doctor .layout-02 ul li h4 {
+  font-size: 1.15rem;
+  margin: 15px 0 8px 0;
+  text-align: left;
+}
+
+#doctor .layout-02 ul li p {
+  text-align: left;
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
+
+/*------------------------------------------------------
+model
+------------------------------------------------------*/
+#model {
+  background: url('../images/common/contact_bg.png');
+  background-repeat: repeat;
+  width: 100%
+}
+
+#model .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+#model .grid .txt-wrap {
+  padding: 2rem 3rem
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #model {
+    margin: 0 0 60px 0
+  }
+
+  #model .grid {
+    display: grid;
+    grid-template-columns: 1fr
+  }
+
+  #model .grid .txt-wrap {
+    padding: 2rem 0
+  }
+}

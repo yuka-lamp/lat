@@ -50,7 +50,9 @@ li>a {
   display: block;
 }
 
-/*--------------------------------------------------------------layout*/
+/*------------------------------------------------------
+基礎レイアウト
+------------------------------------------------------*/
 .sec {
   padding: 60px 0
 }
@@ -113,7 +115,9 @@ li>a {
   }
 }
 
-/*--------------------------------------------------------------余白*/
+/*------------------------------------------------------
+余白
+------------------------------------------------------*/
 .m-120 {
   margin: 120px 0
 }
@@ -123,11 +127,11 @@ li>a {
 }
 
 .mt-60 {
-  margin-top: 60px 0
+  margin: 60px 0 0 0
 }
 
 .mb-60 {
-  margin-bottom: 60px 0
+  margin: 0 0 60px 0
 }
 
 .m-30 {
@@ -190,11 +194,11 @@ li>a {
   }
 
   .mt-60 {
-    margin-top: 30px 0
+    margin: 30px 0 0 0
   }
 
   .mb-60 {
-    margin-bottom: 30px 0
+    margin: 0 0 30px 0
   }
 
   .p-120 {
@@ -214,16 +218,21 @@ li>a {
   }
 }
 
-/*--------------------------------------------------------------color*/
+/*------------------------------------------------------
+カラー
+------------------------------------------------------*/
 .main-color {
   color: #7FC600
 }
 
 .gray {
-  color: #8F8F8F
+  color: #8F8F8F;
+  line-height: 1.5rem;
 }
 
-/*--------------------------------------------------------------パーツ*/
+/*------------------------------------------------------
+ボタン
+------------------------------------------------------*/
 .btn a, #recruit-form .form-wrap button, .form-wrap input[type="submit"] {
   border-radius: 0;
   box-shadow: none;
@@ -256,11 +265,13 @@ li>a {
   margin-right: 0
 }
 
-.link p.main-color{
+.link p.main-color {
   font-size: .7rem
 }
 
-/*--------------------------------------------------------------装飾*/
+/*------------------------------------------------------
+タイトル
+------------------------------------------------------*/
 .ttl2 {
   font-size: 2rem
 }
@@ -286,18 +297,30 @@ li>a {
 }
 
 @media(max-width:480px) {
+  .ttl3 {
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #EBF0E6;
+    padding-bottom: 30px
+  }
+
   .ttl3 h2 {
     color: #7FC600;
     font-size: 30px;
     border: none;
     display: block;
+    margin: 0;
+    padding: 0
   }
 
   .ttl3 p {
-    margin: 1rem 0 0 0;
+    margin: .3rem 0 0 0;
   }
 }
 
+/*------------------------------------------------------
+レイアウト01
+------------------------------------------------------*/
 .layout-01 .under p {
   margin: 30px 0 0 0;
   width: 45%
@@ -306,11 +329,79 @@ li>a {
 @media(max-width:768px) {
   .layout-01 .under p {
     margin: 0 0 1rem 0;
+    width: 49%
+  }
+  .layout-01 .under .img-wrap {
+    width: 49%
   }
 }
 
 @media(max-width:480px) {
   .layout-01 .under p {
     width: 100%
+  }
+  .layout-01 .under .img-wrap {
+    width: 100%
+  }
+}
+
+/*------------------------------------------------------
+レイアウト02
+------------------------------------------------------*/
+.layout-02 {
+  width: 100%;
+  border-top: 1px solid #EBF0E6;
+  border-bottom: 1px solid #EBF0E6;
+  text-align: center;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.layout-02 h3 {
+  background: #fff;
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 1.5rem;
+  position: relative;
+  top: -1.3rem;
+}
+
+.layout-02 div {
+  text-align: left;
+}
+
+.layout-02 ul {
+  justify-content: center;
+}
+
+.layout-02 ul li {
+  width: 30%;
+  margin: 0;
+}
+
+.layout-02 ul li .img-wrap img {
+  width: 100%
+}
+
+.layout-02 ul li:nth-child(2) {
+  margin: 0 10px
+}
+
+@media(max-width:768px) {
+  .layout-02 {
+    padding: 0 20px;
+  }
+}
+
+@media(max-width:480px) {
+  .layout-02 {
+    padding: 0 10px;
+  }
+  .layout-02 ul li {
+    width: 100%;
+    margin-bottom: 2rem
+  }
+  .layout-02 ul li:nth-child(2) {
+    margin: 0
   }
 }

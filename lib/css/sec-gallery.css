@@ -1,8 +1,12 @@
 /*------------------------------------------------------
 ギャラリー
 ------------------------------------------------------*/
+#gallery ul {
+  margin-top: 60px
+}
+
 #gallery ul li {
-  width: 270px;
+  width: 31%;
   position: relative;
 }
 
@@ -58,5 +62,13 @@
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
+  #gallery ul {
+    margin-top: 30px
+  }
+
+  #gallery ul li {
+    width: 100%;
+  }
 }

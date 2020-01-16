@@ -9,14 +9,14 @@ get_header(); ?>
   <div class="wrap">
     <ul class="flex ul-style-01">
       <li>
-        <a href="<?php echo $home ?>/health-o">
+        <a href="<?php echo $home ?>/health-r">
           <div class="txt-wrap">
             <p class="main-color b">01</p>
             <p class="main-color b">helth</p>
-            <h2 class="m-30">健康住宅</h2>
+            <h2 class="m-30">健康を考えたリフォーム</h2>
           </div>
           <div class="img-wrap">
-            <img src="<?php echo $wp_url ?>/lib/images/order/01.png" alt="健康住宅">
+            <img src="<?php echo $wp_url ?>/lib/images/reform/01.png" alt="健康住宅">
           </div>
           <div class="link txt-r mt-1">
             <p class="main-color">READ MORE ■</p>
@@ -24,14 +24,14 @@ get_header(); ?>
         </a>
       </li>
       <li>
-        <a href="<?php echo $home ?>/design-o">
+        <a href="<?php echo $home ?>/design-r">
           <div class="txt-wrap">
             <p class="main-color b">02</p>
             <p class="main-color b">design</p>
-            <h2 class="m-30">デザイン住宅</h2>
+            <h2 class="m-30">デザインを考えたリフォーム</h2>
           </div>
           <div class="img-wrap">
-            <img src="<?php echo $wp_url ?>/lib/images/order/02.png" alt="デザイン住宅">
+            <img src="<?php echo $wp_url ?>/lib/images/reform/02.png" alt="デザイン住宅">
           </div>
           <div class="link txt-r mt-1">
             <p class="main-color">READ MORE ■</p>
