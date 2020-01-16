@@ -38,7 +38,12 @@ a {
 }
 
 a:hover {
-  text-decoration: none !important
+  text-decoration: none !important;
+}
+
+ul li a:hover img {
+  opacity: 0.6;
+  transition: 1s;
 }
 
 li>a {
@@ -242,33 +247,17 @@ li>a {
 }
 
 .link {
-  font-size: 0.8rem
+  justify-content: space-between;
 }
 
-/*--------------------------------------------------------------お問い合わせ*/
-#contact {
-  background: url('../images/common/contact_bg.png');
-  background-repeat: repeat;
+.link, .link p, .link p.main-color {
+  font-size: .8rem;
+  margin-left: 0;
+  margin-right: 0
 }
 
-#contact .wrap {
-  width: 680px;
-  background: #fff
-}
-
-#contact .main-color {
-  font-size: 1rem
-}
-
-#contact h2 {
-  margin: 0
-}
-
-@media(max-width:768px) {
-  #contact .wrap {
-    background: none;
-    padding: 2rem 0
-  }
+.link p.main-color{
+  font-size: .7rem
 }
 
 /*--------------------------------------------------------------装飾*/

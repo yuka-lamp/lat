@@ -30,6 +30,7 @@ header>.wrap>nav>ul>li>a::before {
   content: '□';
   color: #E6EBE1;
   margin-right: 10px;
+  transition: 1s;
 }
 
 header>.wrap>nav>ul>li:hover>a::before {
@@ -42,6 +43,7 @@ header>.wrap>nav>ul>li:last-child {
   position: relative;
   border: 2px solid #7FC600;
   margin: 0 0 0 1rem;
+  transition: 1s;
 }
 
 header>.wrap>nav>ul>li:last-child a {
@@ -83,6 +85,7 @@ header>.wrap>nav>ul>li:last-child>a::before, header>.wrap>nav>ul>li:last-child:h
 
 .drawer-dropdown-menu li:hover {
   background: #EBF0E6;
+  transition: 1s;
 }
 
 .drawer-dropdown-menu li:last-child {

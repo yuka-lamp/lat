@@ -20,6 +20,9 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/footer.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/front.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/mv.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sec-contact.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sec-gallery.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/order.css">
 </head>
 <body class="drawer drawer--right">
 

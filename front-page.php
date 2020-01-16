@@ -29,7 +29,8 @@ get_header(); ?>
         <p class="main-color b">01</p>
         <h3>注文建築</h3>
         </div>
-        <div class="link">
+        <div class="link flex">
+          <p class="gray">詳しく見る</p>
           <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
         </div>
       </div>
@@ -45,7 +46,8 @@ get_header(); ?>
           <p class="main-color b">02</p>
           <h3>リフォーム</h3>
         </div>
-        <div class="link">
+        <div class="link flex">
+          <p class="gray">詳しく見る</p>
           <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
         </div>
       </div>
@@ -61,7 +63,8 @@ get_header(); ?>
         <p class="main-color b">03</p>
         <h3>店舗建築</h3>
         </div>
-        <div class="link">
+        <div class="link flex">
+          <p class="gray">詳しく見る</p>
           <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
         </div>
       </div>
@@ -77,7 +80,8 @@ get_header(); ?>
         <p class="main-color b">04</p>
         <h3>大型建築</h3>
         </div>
-        <div class="link">
+        <div class="link flex">
+          <p class="gray">詳しく見る</p>
           <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
         </div>
       </div>
@@ -92,6 +96,6 @@ get_header(); ?>
     </div>
     <p>リードアーキテクトが<br>今までお任せいただいた施工</p>
   </div>
-  
+
 </section>
 <?php get_footer();

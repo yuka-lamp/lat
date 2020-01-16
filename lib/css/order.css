@@ -1,0 +1,39 @@
+/*------------------------------------------------------
+注文建築
+------------------------------------------------------*/
+#select ul li {
+  position: relative;
+}
+
+#select ul li a .txt-wrap {
+  border-top: 1px solid #EBF0E6;
+  border-left: 1px solid #EBF0E6;
+  border-right: 1px solid #EBF0E6;
+  display: flow-root;
+}
+
+#select ul li a .txt-wrap>p:first-child {
+  position: absolute;
+  top: -1.7rem;
+  font-size: 26px;
+  display: block;
+  width: 100%;
+}
+
+#select ul li a .txt-wrap>p:nth-child(2) {
+  font-size: 1rem;
+  margin-top: 1rem
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #about .wrap {
+    padding: 0 15px
+  }
+}

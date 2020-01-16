@@ -1,0 +1,38 @@
+/*------------------------------------------------------
+お問い合わせ
+------------------------------------------------------*/
+
+#contact {
+  background: url('../images/common/contact_bg.png');
+  background-repeat: repeat;
+}
+
+#contact .wrap {
+  width: 680px;
+  background: #fff
+}
+
+#contact .main-color {
+  font-size: 1rem
+}
+
+#contact h2 {
+  margin: 0
+}
+
+@media(max-width:768px) {
+  #contact .wrap {
+    background: none;
+    padding: 2rem 0
+  }
+}
+
+/*--------------------------------------------レスポンシブ*/
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
