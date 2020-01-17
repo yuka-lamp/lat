@@ -202,8 +202,8 @@ FAQ
 }
 
 #contact-form .wpcf7-radio span.wpcf7-list-item {
-  display: flex!important;
-  justify-content: flex-start!important;
+  display: flex !important;
+  justify-content: flex-start !important;
 }
 
 #contact-form .wpcf7-radio input {
@@ -230,4 +230,18 @@ FAQ
   #contact-form form p:first-child, #contact-form form p label span {
     width: 100%
   }
+}
+
+/*------------------------------------------------------
+特殊建築
+------------------------------------------------------*/
+#special .flex {
+  width: 100%
+}
+#special .flex>div {
+  width: 49%
+}
+
+#special>div:last-child {
+  padding: 60px 0 0 0
 }
