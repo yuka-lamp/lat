@@ -1,33 +1,97 @@
 /*------------------------------------------------------
 about
 ------------------------------------------------------*/
-
 #about .wrap {
   background: url('../images/front/about_bg.png');
   background-size: cover;
   background-position: right;
-  padding: 0 0 0 80px
+}
+
+#about .layout-01 {
+  width: 70%;
+}
+
+#about .layout-01::before {
+  display: none
+}
+
+#about .img-wrap {
+  width: 440px;
+  height: 220px;
+  position: relative;
+}
+
+#about .layout-01 .under .img-wrap {
+  margin: 0
+}
+
+#about .next-arrow, #about .prev-arrow {
+  background: none;
+  padding: 0;
+  top: auto;
+  bottom: -2.5rem;
+  left: auto;
+}
+
+#about .prev-arrow {
+  right: 2rem
+}
+
+#about .layout-01 .img-wrap::before {
+  content: url('../images/front/stamp.png');
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  z-index: 2
+}
+
+#about .layout-01 .img-wrap::after {
+  content: url('../images/front/photo.png');
+  position: absolute;
+  top: 9rem;
+  right: 23rem;
+  z-index: 2
 }
 
 /*--------------------------------------------レスポンシブ*/
-
 @media(max-width:768px) {
+
   /*--スマホよこ--*/
+  #about .layout-01 .under p {
+    width: 100%
+  }
+
+  #about .layout-01 .img-wrap::before {
+    display: none
+  }
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
+  #about .layout-01 {
+    width: 100%;
+  }
+
   #about .wrap {
     padding: 0 15px
+  }
+
+  #about .img-wrap {
+    width: 100%;
+    height: auto;
   }
 }
 
 /*------------------------------------------------------
 service
 ------------------------------------------------------*/
-
 #service .ttl3 {
   margin: 0 0 0 2rem
+}
+
+#service ul {
+  margin-bottom: 0
 }
 
 #service ul li {
@@ -62,18 +126,20 @@ service
 }
 
 /*--------------------------------------------レスポンシブ*/
-
 @media(max-width:768px) {
+
   /*--スマホよこ--*/
   #service .ttl3 {
-    margin: 0 0 0 15px
+    margin: 0
   }
+
   #service ul li {
     width: 49.9%
   }
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
   #service ul li {
     width: 100%
@@ -83,14 +149,76 @@ service
 /*------------------------------------------------------
 gallery
 ------------------------------------------------------*/
+#fr-gallery {
+  align-items: center;
+  position: relative;
+}
 
+#fr-gallery::before {
+  content: '';
+  background: url('../images/common/contact_bg.png');
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+#fr-gallery .ttl3 {
+  width: 25%;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+
+#fr-gallery .slide {
+  width: 70%
+}
+
+#fr-gallery .ttl3>h2 {
+  border: none;
+  padding: none;
+  display: block;
+  margin: 0 0 2rem
+}
+
+#fr-gallery .ttl3>h2::after {
+  content: '';
+  width: 70px;
+  height: 1px;
+  background: #333;
+}
+
+#fr-gallery .ttl3 p {
+  margin: 0
+}
+
+.slick-track
 
 /*--------------------------------------------レスポンシブ*/
-
 @media(max-width:768px) {
   /*--スマホよこ--*/
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
+  #fr-gallery .flex {
+    display: block;
+  }
+
+  #fr-gallery .ttl3 {
+    width: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+  }
+
+  #fr-gallery .slide {
+    width: 100%;
+    margin-top: 2rem
+  }
+
+  #fr-gallery .ttl3>h2, #fr-gallery .ttl3>p {
+    margin: 0 0 1rem 0
+  }
 }

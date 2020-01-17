@@ -29,6 +29,7 @@ if (!is_home() && !is_front_page()) {
           <p class="ttl">わたしたちについて</p>
           <ul>
             <li><a href="<?php echo $home ?>/company">会社情報</a></li>
+            <li><a href="<?php echo $home ?>/faq">よくあるご質問</a></li>
             <li><a href="<?php echo $home ?>/recruit">採用情報</a></li>
             <li><a href="<?php echo $home ?>/event">内覧会</a></li>
           </ul>
@@ -146,6 +147,37 @@ $(document).ready(function() {
       breakpoint: 768, //767px以下のサイズに適用
       settings: {
         slidesToShow:1
+      }
+     }
+   ]
+  });
+  $('.slider-fr01').slick({
+    autoplay:true,
+    autoplaySpeed:2000,
+    dots:false,
+    arrows:true,
+    slidesToShow:1,
+    slidesToScroll:1,
+    customPaging: function(slider, i) {
+    return $('<button type="button" />').text(i + 1);
+  },
+    prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/front/arrow_l.png" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/front/arrow_r.png" class="slide-arrow next-arrow">',
+  });
+  $('.slider-fr02').slick({
+    autoplay:true,
+    autoplaySpeed:0,
+    dots:false,
+    arrows:false,
+    slidesToShow:4,
+    slidesToScroll:1,
+    cssEase: 'linear',
+    speed: 10000,
+    responsive: [
+     {
+      breakpoint: 768, //767px以下のサイズに適用
+      settings: {
+        slidesToShow:1.5
       }
      }
    ]
