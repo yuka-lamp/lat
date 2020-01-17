@@ -18,6 +18,7 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick-theme.css" />
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/first.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/common.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/layout.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/header.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/footer.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/front.css">
@@ -28,6 +29,7 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/health.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/design.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/other.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/shop.css">
 </head>
 <body class="drawer drawer--right">
 

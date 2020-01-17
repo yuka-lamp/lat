@@ -1,0 +1,59 @@
+/*------------------------------------------------------
+店舗
+------------------------------------------------------*/
+
+#shop .layout-01 ul {
+  flex-wrap: wrap;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#shop .layout-01 ul li {
+  width: 29%;
+  margin: 0
+}
+
+#shop .layout-01 ul li .txt-wrap {
+  margin: 15px 0
+}
+
+#shop .layout-01 ul li .img-wrap img {
+  width: 100%
+}
+
+#shop .layout-01 ul li h3 {
+  font-size: 1rem;
+  margin-bottom: 5px
+}
+
+#shop .layout-01 ul li h3::before {
+  content: '+';
+  color: #7FC600;
+  margin-right: 1rem
+}
+
+#shop .layout-01 ul li p {
+  font-size: 12px;
+  color: #8F8F8F;
+  line-height: 1.5;
+}
+
+/*--------------------------------------------レスポンシブ*/
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+  #shop {
+    padding-bottom: 0
+  }
+  #shop .layout-01 ul {
+    margin-top: 60px
+  }
+  #shop .layout-01 ul li {
+    width: 49%;
+    margin: 0 0 1rem 0
+  }
+}

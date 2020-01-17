@@ -5,7 +5,7 @@ $wp_url = get_template_directory_uri(); ?>
   <div class="wrap">
     <div class="ttl3">
       <h2>gallery</h2>
-      <p>内覧ができるOB宅</p>
+      <p>リードアーキテクトの<br>内覧ができるOB宅</p>
     </div>
     <?php
     $arg = array(

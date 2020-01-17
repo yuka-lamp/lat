@@ -71,4 +71,10 @@
   #gallery ul li {
     width: 100%;
   }
+  #gallery ul li::before {
+    top: auto;
+    left: auto;
+    right: 0.5rem;
+    bottom: 3.5rem;
+  }
 }
