@@ -27,6 +27,7 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/ul-style.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/health.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/design.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/other.css">
 </head>
 <body class="drawer drawer--right">
 

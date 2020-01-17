@@ -123,15 +123,15 @@ li>a {
 }
 
 .m-60 {
-  margin: 60px 0
+  margin: 50px 0
 }
 
 .mt-60 {
-  margin: 60px 0 0 0
+  margin: 50px 0 0 0
 }
 
 .mb-60 {
-  margin: 0 0 60px 0
+  margin: 0 0 50px 0
 }
 
 .m-30 {
@@ -139,11 +139,11 @@ li>a {
 }
 
 .mt-30 {
-  margin-top: 30px 0
+  margin: 30px 0 0 0
 }
 
 .mb-30 {
-  margin-bottom: 30px 0
+  margin: 0 0 30px 0
 }
 
 .m-20 {
@@ -155,15 +155,15 @@ li>a {
 }
 
 .p-60 {
-  padding: 60px 0
+  padding: 50px 0
 }
 
 .pt-60 {
-  padding-top: 60px 0
+  padding-top: 50px 0
 }
 
 .pb-60 {
-  padding-bottom: 60px 0
+  padding-bottom: 50px 0
 }
 
 .p-30 {
@@ -186,7 +186,7 @@ li>a {
 
   /*--スマホよこ--*/
   .m-120 {
-    margin: 60px 0
+    margin: 50px 0
   }
 
   .m-60 {

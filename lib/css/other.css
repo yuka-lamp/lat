@@ -1,0 +1,93 @@
+/*------------------------------------------------------
+会社概要
+------------------------------------------------------*/
+#company {
+  padding: 0 0 60px 0
+}
+
+#company ul {
+  width: 80%;
+  border-top: 1px solid #EBF0E6
+}
+
+#company ul li {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #EBF0E6
+}
+
+#company ul li p {
+  margin: 0 30px;
+}
+
+#company ul li p:first-child {
+  width: 30%
+}
+
+#company ul li p:last-child {
+  width: 70%
+}
+
+#perfor .ttl2 {
+  font-size: 1.5rem
+}
+
+#perfor .flex {
+  justify-content: center;
+}
+
+#perfor .flex span {
+  font-size: 4rem
+}
+
+#perfor .flex p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0
+}
+
+#perfor .flex p:nth-child(2) {
+  margin: 0 3rem
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #company {
+    padding: 0 0 40px 0
+  }
+
+  #company ul {
+    width: 100%
+  }
+
+  #company ul li p {
+    margin: 0 10px;
+  }
+
+  #company ul li p:first-child {
+    width: 100%
+  }
+
+  #company ul li p:last-child {
+    width: 100%
+  }
+}
+
+/*------------------------------------------------------
+会社概要
+------------------------------------------------------*/
+
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+}

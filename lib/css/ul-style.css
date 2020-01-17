@@ -25,7 +25,11 @@ ul.ul-style-01 li .txt-wrap>p:first-child {
 
 ul.ul-style-01 li .txt-wrap>p:nth-child(2) {
   font-size: 1rem;
-  margin-top: 1rem
+  margin: -2.5rem auto 60px 0
+}
+
+#select ul.ul-style-01 li .txt-wrap>h2 {
+  margin: -2.5rem auto 10px 0
 }
 
 /*--------------------------------------------レスポンシブ*/
@@ -36,5 +40,50 @@ ul.ul-style-01 li .txt-wrap>p:nth-child(2) {
 @media(max-width:480px) {
   ul.ul-style-01 li {
     margin-bottom: 2rem
+  }
+
+  ul.ul-style-01 li .txt-wrap>p:nth-child(2) {
+    font-size: 1rem;
+    margin: -2.5rem auto 30px 0
+  }
+  #select ul.ul-style-01 li .txt-wrap>h2 {
+    margin: -1rem auto 10px 0
+  }
+}
+
+/*------------------------------------------------------
+リストスタイル02
+------------------------------------------------------*/
+
+.ul-style-02 li {
+  width:32%
+}
+
+.ul-style-02 li img {
+  width: 100%
+}
+
+.ul-style-02 li .txt-wrap {
+  padding: 1rem;
+  box-sizing:border-box;
+  border: 1px solid #EBF0E6;
+  border-top: none
+}
+
+.ul-style-02 li .txt-wrap h3 {
+  font-size: 1.35rem
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+  .ul-style-02 li {
+    margin: 0 0 2rem 0;
+    width: 100%;
+    text-align: left;
   }
 }

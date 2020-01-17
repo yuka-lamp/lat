@@ -101,6 +101,21 @@ $(document).ready(function() {
     prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_l.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">'
   });
+  $('.slider-03').slick({
+    autoplay:true,
+    autoplaySpeed:0,
+    dots:false,
+    arrows:false,
+    slidesToShow:1,
+    slidesToScroll:1,
+    cssEase: 'linear',
+    speed: 40000,
+  });
+  /*--よくあるご質問--*/
+  jQuery(".ac").on("click", function() {
+		jQuery(this).next().slideToggle();
+		jQuery(this).toggleClass("active");
+	});
 });
 </script>
 </html>

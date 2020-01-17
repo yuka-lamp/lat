@@ -13,7 +13,7 @@ get_header(); ?>
           <div class="txt-wrap">
             <p class="main-color b">01</p>
             <p class="main-color b">helth</p>
-            <h2 class="m-30">健康を考えたリフォーム</h2>
+            <h2>健康を考えたリフォーム</h2>
           </div>
           <div class="img-wrap">
             <img src="<?php echo $wp_url ?>/lib/images/reform/01.png" alt="健康住宅">
@@ -28,7 +28,7 @@ get_header(); ?>
           <div class="txt-wrap">
             <p class="main-color b">02</p>
             <p class="main-color b">design</p>
-            <h2 class="m-30">デザインを考えたリフォーム</h2>
+            <h2>デザインを考えたリフォーム</h2>
           </div>
           <div class="img-wrap">
             <img src="<?php echo $wp_url ?>/lib/images/reform/02.png" alt="デザイン住宅">
