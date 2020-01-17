@@ -1,0 +1,73 @@
+/*------------------------------------------------------
+リストスタイル01
+------------------------------------------------------*/
+#works .cat {
+  margin-bottom: 30px
+}
+
+#works .cat ul li {
+  display: inline-block;
+  border: 1px solid #EBF0E6;
+  padding: 5px;
+  color: #333;
+  margin: 0 5px 5px 0;
+  font-size: 13px;
+}
+
+#works ul.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#works ul.grid li {
+  padding: 1rem;
+  border-right: 2px solid #EBF0E6;
+  border-bottom: 2px solid #EBF0E6;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#works ul.grid li:nth-child(4n) {
+  border-right: none
+}
+
+#works ul.grid li:last-child {
+  margin: 0;
+}
+
+#works ul.grid li .txt-wrap {
+  padding: 14px 0;
+  border:none
+}
+
+#works ul.grid li h3 {
+  font-size: 1.1rem;
+  margin: 0
+}
+
+#works ul.grid li .gray {
+  color: #7FC600;
+  font-size: 13px;
+  margin: 0 0 5px 0
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  ul.ul-style-01 li {
+    margin-bottom: 2rem
+  }
+
+  ul.ul-style-01 li .txt-wrap>p:nth-child(2) {
+    font-size: 1rem;
+    margin: -2.5rem auto 30px 0
+  }
+
+  #select ul.ul-style-01 li .txt-wrap>h2 {
+    margin: -1rem auto 10px 0
+  }
+}

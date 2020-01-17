@@ -30,6 +30,7 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/design.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/other.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/shop.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/works.css">
 </head>
 <body class="drawer drawer--right">
 
