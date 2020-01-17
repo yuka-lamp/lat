@@ -238,10 +238,50 @@ FAQ
 #special .flex {
   width: 100%
 }
+
 #special .flex>div {
   width: 49%
 }
 
 #special>div:last-child {
   padding: 60px 0 0 0
+}
+
+/*------------------------------------------------------
+リフォーム-health
+------------------------------------------------------*/
+#health-r .next-arrow {
+  left: auto;
+  right: -10px !important;
+}
+
+#health-r .prev-arrow {
+  left: -10px !important;
+  right: auto;
+}
+
+#health-r ul.ul-style-01 li {
+  padding: 1rem 0 0 0;
+}
+
+#health-r ul.ul-style-01 li .img-wrap img {
+  width: 100%
+}
+
+#health-r .slick-dots {
+  bottom: -60px;
+}
+
+@media(max-width:480px) {
+  #health-r .next-arrow,#health-r .prev-arrow {
+    top:50%!important
+  }
+}
+
+/*------------------------------------------------------
+slider-o1
+------------------------------------------------------*/
+
+.slick-slide {
+  margin: 0 5px;
 }

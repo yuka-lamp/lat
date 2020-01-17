@@ -88,10 +88,20 @@ $(document).ready(function() {
     slidesToScroll:1,
     cssEase: 'linear',
     speed: 5000,
+    responsive: [
+     {
+      breakpoint: 768, //767px以下のサイズに適用
+      settings: {
+        slidesToShow:1.5,
+        speed: 10000,
+      }
+     }
+   ]
   });
   $('.slider-02').slick({
     autoplay:false,
-    autoplaySpeed:3000,
+    autoplaySpeed:0,
+    Speed:40000,
     slidesToShow:1,
     slidesToScroll:1,
     dots:true,
@@ -99,7 +109,15 @@ $(document).ready(function() {
     return $('<button type="button" />').text(i + 1);
   },
     prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_l.png" class="slide-arrow prev-arrow">',
-    nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">'
+    nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">',
+    responsive: [
+     {
+      breakpoint: 768, //767px以下のサイズに適用
+      settings: {
+        slidesToShow:0.5,
+      }
+     }
+   ]
   });
   $('.slider-03').slick({
     autoplay:true,
@@ -110,6 +128,27 @@ $(document).ready(function() {
     slidesToScroll:1,
     cssEase: 'linear',
     speed: 40000,
+  });
+  $('.slider-04').slick({
+    autoplay:true,
+    autoplaySpeed:3000,
+    dots:true,
+    arrows:true,
+    slidesToShow:3,
+    slidesToScroll:1,
+    customPaging: function(slider, i) {
+    return $('<button type="button" />').text(i + 1);
+  },
+    prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_l.png" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">',
+    responsive: [
+     {
+      breakpoint: 768, //767px以下のサイズに適用
+      settings: {
+        slidesToShow:1
+      }
+     }
+   ]
   });
   /*--よくあるご質問--*/
   $(".ac dt").on("click", function() {
