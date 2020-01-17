@@ -82,7 +82,6 @@
 /*------------------------------------------------------
 FAQ
 ------------------------------------------------------*/
-
 #faq h2 {
   font-size: 1.15rem;
   width: 20%
@@ -100,7 +99,7 @@ FAQ
   margin: 0;
   padding: 1.5rem;
   border-bottom: 1px solid #EBF0E6;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #faq dl dt {
@@ -133,7 +132,102 @@ FAQ
   #faq .table {
     width: 100%
   }
+
   #faq .flex {
     margin-bottom: 2rem
+  }
+}
+
+/*------------------------------------------------------
+採用ページ
+------------------------------------------------------*/
+#recruit .flex>div {
+  width: 49%;
+}
+
+#recruit .flex .right div {
+  border: 1px solid #EBF0E6;
+  padding: 2rem;
+  margin-top: 2rem
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  #recruit .flex>div {
+    width: 100%;
+  }
+}
+
+/*------------------------------------------------------
+お問い合わせ
+------------------------------------------------------*/
+#contact-form form {
+  width: 60%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.haveto {
+  background: #7FC600 !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+  font-size: 0.8rem !important;
+  padding: 3px 9px !important;
+  margin: .1rem 0 0 .3rem !important;
+}
+
+#contact-form input {
+  text-align: left;
+  color: #333;
+  padding-top: 1rem .5rem !important;
+}
+
+#contact-form input, #contact-form textarea {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100% !important;
+  padding: .5rem !important;
+}
+
+#contact-form dd {
+  margin-inline-start: 0 !important;
+  margin-top: 1rem
+}
+
+#contact-form .wpcf7-radio span.wpcf7-list-item {
+  display: flex!important;
+  justify-content: flex-start!important;
+}
+
+#contact-form .wpcf7-radio input {
+  display: inline-block;
+  width: 35px !important;
+}
+
+#contact-form button, #contact-form input[type="submit"] {
+  width: 240px !important;
+  margin: 2rem auto !important;
+  text-align: center;
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  #contact-form form {
+    width: 100%;
+  }
+
+  #contact-form form p:first-child, #contact-form form p label span {
+    width: 100%
   }
 }

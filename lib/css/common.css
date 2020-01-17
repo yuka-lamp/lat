@@ -233,16 +233,17 @@ li>a {
 /*------------------------------------------------------
 ボタン
 ------------------------------------------------------*/
-.btn a, #recruit-form .form-wrap button, .form-wrap input[type="submit"] {
+.btn a, #contact-form button, #contact-form input[type="submit"] {
   border-radius: 0;
   box-shadow: none;
   background: #333;
   color: #fff;
   position: relative;
   min-width: 300px;
+  transition: 1.5s
 }
 
-.btn a:hover {
+.btn a:hover #contact-form button:hover, #contact-form input[type="submit"]:hover {
   color: #333;
   background: #fff
 }
@@ -331,6 +332,7 @@ li>a {
     margin: 0 0 1rem 0;
     width: 49%
   }
+
   .layout-01 .under .img-wrap {
     width: 49%
   }
@@ -340,6 +342,7 @@ li>a {
   .layout-01 .under p {
     width: 100%
   }
+
   .layout-01 .under .img-wrap {
     width: 100%
   }
@@ -397,10 +400,12 @@ li>a {
   .layout-02 {
     padding: 0 10px;
   }
+
   .layout-02 ul li {
     width: 100%;
     margin-bottom: 2rem
   }
+
   .layout-02 ul li:nth-child(2) {
     margin: 0
   }

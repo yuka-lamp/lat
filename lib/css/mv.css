@@ -105,6 +105,10 @@
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
+  #submv_imgnone {
+    text-align: center;
+    padding: 60px 0 0 0
+  }
   #submv_imgnone .wrap::after {
     margin: 30px auto;
   }
