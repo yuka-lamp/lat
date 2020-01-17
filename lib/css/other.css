@@ -80,9 +80,44 @@
 }
 
 /*------------------------------------------------------
-会社概要
+FAQ
 ------------------------------------------------------*/
 
+#faq h2 {
+  font-size: 1.15rem;
+  width: 20%
+}
+
+#faq .table {
+  width: 77%
+}
+
+#faq dl:first-child {
+  border-top: 1px solid #EBF0E6
+}
+
+#faq dl {
+  margin: 0;
+  padding: 1.5rem;
+  border-bottom: 1px solid #EBF0E6;
+  cursor:pointer;
+}
+
+#faq dl dt {
+  font-weight: bold;
+}
+
+#faq dl dd {
+  margin-top: 1.5rem;
+  display: none;
+}
+
+#faq dl dt::before {
+  content: 'Q';
+  font-size: 22px;
+  margin-right: 1rem;
+  color: #7FC600
+}
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
@@ -90,4 +125,15 @@
 }
 
 @media(max-width:480px) {
+  #faq h2 {
+    font-size: 1.15rem;
+    width: 100%
+  }
+
+  #faq .table {
+    width: 100%
+  }
+  #faq .flex {
+    margin-bottom: 2rem
+  }
 }

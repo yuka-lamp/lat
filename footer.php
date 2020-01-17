@@ -112,10 +112,9 @@ $(document).ready(function() {
     speed: 40000,
   });
   /*--よくあるご質問--*/
-  jQuery(".ac").on("click", function() {
-		jQuery(this).next().slideToggle();
-		jQuery(this).toggleClass("active");
-	});
+  $(".ac dt").on("click", function() {
+  $(this).next().slideToggle();
+});
 });
 </script>
 </html>
