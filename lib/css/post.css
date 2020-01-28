@@ -1,0 +1,94 @@
+/*------------------------------------------------------
+記事詳細ページ
+------------------------------------------------------*/
+#post {
+  background: #EBF0E6;
+}
+
+#post .wrap {
+  width: 900px;
+  margin: 2rem auto 0 auto;
+  border-radius: 1rem;
+  padding: 4rem;
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #EBF0E6;
+}
+
+#post .cat, #post time {
+  font-size: 14px;
+  margin-right: 1rem
+}
+
+#post time {
+  font-weight: bold;
+  color: #8F8F8F
+}
+
+#post .cat a {
+  color: #7FC600;
+  font-weight: bold;
+}
+
+#post .thumbnail {
+  width: 268px;
+}
+
+#post .inner {
+  width: calc(100% - 268px);
+  margin-left: 40px;
+  padding: 1.5rem 0;
+}
+
+#post h1 {
+  font-size: 30px;
+  margin: 1rem 0
+}
+
+#post h2 {
+  font-size: 26px;
+  margin: 1rem 0
+}
+
+#post h3 {
+  font-size: 22px;
+  margin: 1rem 0
+}
+
+#post h4 {
+  font-size: 18px;
+  margin: 1rem 0
+}
+
+#post ul {
+  list-style: circle;
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #post .inner {
+    width: 100%;
+    margin-left: 0;
+    padding: 1.5rem 0 0 0;
+  }
+
+  #post {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 15px
+  }
+
+  #post .wrap {
+    width: 100%;
+    padding: 2rem;
+    margin: 3rem auto
+  }
+
+  #post .post-inner {
+    margin-top: 0
+  }
+}
+
+@media(max-width:480px) {}

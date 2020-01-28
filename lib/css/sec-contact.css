@@ -9,7 +9,6 @@
 
 #contact .wrap {
   width: 680px;
-  background: #fff
 }
 
 #contact .main-color {
@@ -31,6 +30,16 @@
 
 @media(max-width:768px) {
   /*--スマホよこ--*/
+  #contact .btn {
+    display: flex;
+
+  }
+
+  #contact .btn a {
+    width: 50%;
+    min-width: 50%;
+    padding: 20px 0;
+  }
 }
 
 @media(max-width:480px) {

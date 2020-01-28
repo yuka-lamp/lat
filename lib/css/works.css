@@ -1,6 +1,11 @@
 /*------------------------------------------------------
 リストスタイル01
 ------------------------------------------------------*/
+#works .wrap {
+  width: 900px;
+  margin: 0 auto
+}
+
 #works .cat {
   margin-bottom: 30px
 }
@@ -8,66 +13,71 @@
 #works .cat ul li {
   display: inline-block;
   border: 1px solid #EBF0E6;
-  padding: 5px;
   color: #333;
   margin: 0 5px 5px 0;
   font-size: 13px;
+  padding: 5px 10px
 }
 
-#works ul.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+#works ul.list {
+  align-items: center;
+  border-top: 1px solid #EBF0E6;
 }
 
-#works ul.grid li {
+#works ul.list li {
   padding: 1rem;
-  border-right: 2px solid #EBF0E6;
-  border-bottom: 2px solid #EBF0E6;
-  margin: 0;
+  padding: 30px 0;
   width: 100%;
   box-sizing: border-box;
+  border-bottom: 1px solid #EBF0E6;
 }
 
-#works ul.grid li:nth-child(4n) {
-  border-right: none
+#works ul.list li .img-wrap {
+  width: 200px;
+  height: 140px;
 }
 
-#works ul.grid li:last-child {
-  margin: 0;
+#works ul.list li .txt-wrap {
+  width: calc(100% - 200px);
+  padding-left: 40px;
 }
 
-#works ul.grid li .txt-wrap {
-  padding: 14px 0;
-  border:none
-}
-
-#works ul.grid li h3 {
+#works ul.list li h3 {
   font-size: 1.1rem;
-  margin: 0
+  margin: 7px 0
 }
 
-#works ul.grid li .gray {
+#works ul.list li .content p {
+  height: 3rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+  color: #8F8F8F
+}
+
+#works ul.list li span {
   color: #7FC600;
-  font-size: 13px;
-  margin: 0 0 5px 0
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#works ul.list li span:nth-child(2) {
+  color: #8F8F8F
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
+
   /*--スマホよこ--*/
-}
-
-@media(max-width:480px) {
-  ul.ul-style-01 li {
-    margin-bottom: 2rem
+  #works ul.list li .img-wrap {
+    width: 100px;
+    height: 70px;
   }
 
-  ul.ul-style-01 li .txt-wrap>p:nth-child(2) {
-    font-size: 1rem;
-    margin: -2.5rem auto 30px 0
-  }
-
-  #select ul.ul-style-01 li .txt-wrap>h2 {
-    margin: -1rem auto 10px 0
+  #works ul.list li .txt-wrap {
+    width: calc(100% - 120px);
+    padding-left: 10px;
   }
 }
+
+@media(max-width:480px) {}

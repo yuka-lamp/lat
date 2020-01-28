@@ -35,7 +35,7 @@
 #mv-front .txt-wrap {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 5%;
   border-left: 6px solid #7FC600;
   padding: 0 0 0 2.5rem
 }
@@ -64,7 +64,8 @@
 
   /*--スマホたて--*/
   #mv-front .txt-wrap {
-    padding: 0 0 0 1rem
+    padding: 0 0 0 1rem;
+    margin: 0 0 2rem 0;
   }
 
   #mv-front .txt-wrap h2 {
@@ -153,4 +154,80 @@
 
 @media(max-width:480px) {
   /*--スマホたて--*/
+}
+
+/*------------------------------------------------------
+各ページ画像設定
+------------------------------------------------------*/
+
+#submv_img.order {
+  background: url('../images/order/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.reform {
+  background: url('../images/reform/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.shop {
+  background: url('../images/shop/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.large {
+  background: url('../images/large/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.health-o {
+  background: url('../images/health-o/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.design-o {
+  background: url('../images/design-o/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.health-r {
+  background: url('../images/health-r/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.design-r {
+  background: url('../images/design-r/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.consul {
+  background: url('../images/consul/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.revenue {
+  background: url('../images/revenue/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.special {
+  background: url('../images/special/mv.png');
+  background-position: right;
+  background-size: cover;
+}
+
+#submv_img.cat {
+  background: url('../images/gallery/mv.png');
+  background-position: right;
+  background-size: cover;
 }

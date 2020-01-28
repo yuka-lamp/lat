@@ -31,6 +31,7 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/other.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/shop.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/works.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/post.css">
 </head>
 <body class="drawer drawer--right">
 
@@ -51,7 +52,24 @@ $slug      = $post_data->post_name;
       <ul class="drawer-menu flex">
         <li class="drawer-dropdown">
           <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">サービス紹介<span class="drawer-caret"></span></a>
-          <ul class="drawer-dropdown-menu">
+          <!--sp用サービスメニュー始まり-->
+          <ul class="sub-menu sp-only">
+            <li><a class="" href="<?php echo $home ?>/order">
+              <p>注文建築</p>
+            </a></li>
+            <li><a class="" href="<?php echo $home ?>/reform">
+              <p>リフォーム</p>
+            </a></li>
+            <li><a class="" href="<?php echo $home ?>/shop">
+              <p>店舗建築</p>
+            </a></li>
+            <li><a class="" href="<?php echo $home ?>/large">
+              <p>大型建築</p>
+            </a></li>
+          </ul>
+          <!--sp用サービスメニュー終わり-->
+          <!--PC用サービスメニュー始まり-->
+          <ul class="drawer-dropdown-menu pc-only">
             <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/order">
               <img src="<?php echo $wp_url ?>/lib/images/common/nav_01.png" alt="注文建築">
               <p>注文建築</p>
@@ -69,11 +87,20 @@ $slug      = $post_data->post_name;
               <p>大型建築</p>
             </a></li>
           </ul>
+          <!--PC用サービスメニュー終わり-->
         </li>
-        <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
-        <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社情報</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/gallery">事例紹介</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
+        <li class="tel txt-c">
+          <a class="drawer-menu-item" href="tel:075-693-2880">
+            <div class="img-wrap">
+              <img src="<?php echo $wp_url ?>/lib/images/common/tel.png" alt="電話アイコン">
+            </div>
+            <p></p>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>

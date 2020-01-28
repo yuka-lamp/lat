@@ -7,49 +7,50 @@ about
   background-position: right;
 }
 
-#about .layout-01 {
+#about .layout {
   width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#about .layout-01::before {
+#about .layout::before {
   display: none
+}
+
+#about .txt-wrap {
+  width: 45%;
+  margin: 0;
+  padding: 0
 }
 
 #about .img-wrap {
   width: 440px;
-  height: 220px;
   position: relative;
 }
 
-#about .layout-01 .under .img-wrap {
+#about .layout .under .img-wrap {
   margin: 0
 }
 
 #about .next-arrow, #about .prev-arrow {
   background: none;
   padding: 0;
-  top: auto;
-  bottom: -2.5rem;
+  top: 60%;
   left: auto;
+  right: -1.5rem;
 }
 
 #about .prev-arrow {
-  right: 2rem
+  left: -1.5rem;
+  right: auto
 }
 
-#about .layout-01 .img-wrap::before {
+#about .layout .img-wrap::before {
   content: url('../images/front/stamp.png');
   position: absolute;
   top: -1rem;
   right: -1rem;
-  z-index: 2
-}
-
-#about .layout-01 .img-wrap::after {
-  content: url('../images/front/photo.png');
-  position: absolute;
-  top: 9rem;
-  right: 23rem;
   z-index: 2
 }
 
@@ -59,10 +60,6 @@ about
   /*--スマホよこ--*/
   #about .layout-01 .under p {
     width: 100%
-  }
-
-  #about .layout-01 .img-wrap::before {
-    display: none
   }
 }
 
@@ -86,6 +83,10 @@ about
 /*------------------------------------------------------
 service
 ------------------------------------------------------*/
+#service {
+  background: #F3F7EF;
+}
+
 #service .ttl3 {
   margin: 0 0 0 2rem
 }
@@ -156,7 +157,6 @@ gallery
 
 #fr-gallery::before {
   content: '';
-  background: url('../images/common/contact_bg.png');
   width: 50%;
   height: 100%;
   position: absolute;
@@ -165,35 +165,15 @@ gallery
   z-index: -1
 }
 
-#fr-gallery .ttl3 {
-  width: 25%;
-  padding: 0 3rem;
+#fr-gallery .ttl4 {
   box-sizing: border-box;
+  margin-bottom: 60px
 }
 
-#fr-gallery .slide {
-  width: 70%
+#fr-gallery .ttl4 h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
-
-#fr-gallery .ttl3>h2 {
-  border: none;
-  padding: none;
-  display: block;
-  margin: 0 0 2rem
-}
-
-#fr-gallery .ttl3>h2::after {
-  content: '';
-  width: 70px;
-  height: 1px;
-  background: #333;
-}
-
-#fr-gallery .ttl3 p {
-  margin: 0
-}
-
-.slick-track
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {

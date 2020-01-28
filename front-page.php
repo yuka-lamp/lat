@@ -3,16 +3,19 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 <section id="about" class="sec">
-  <div class="wrap layout-01">
-    <h2 class="ttl2">お客様と、<br><span>暮らしのデザイン</span>を<br class="sp-only">創る。</h2>
-    <div class="under flex">
+  <div class="wrap layout">
+    <div class="txt-wrap">
+      <h2 class="ttl2">お客様と、<br><span>暮らしのデザイン</span>を<br class="sp-only">創る。</h2>
       <p>リードアーキテクトは設計と工事をワンストップで担当するため、お客様にとって最適な建築のご提案をフルオーダーで行うことができます。</p>
-      <div class="img-wrap">
-        <ul class="slider-fr01">
-          <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/01.png" alt="施工様子01"></li>
-          <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/01.png" alt="施工様子01"></li>
-        </ul>
-      </div>
+    </div>
+    <div class="img-wrap">
+      <ul class="slider-fr01">
+        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/01.png" alt="施工様子01"></li>
+        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/02.png" alt="施工様子02"></li>
+        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/03.png" alt="施工様子03"></li>
+        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/04.png" alt="施工様子04"></li>
+        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/05.png" alt="施工様子05"></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -93,13 +96,13 @@ get_header(); ?>
   </ul>
 </section>
 <section id="fr-gallery" class="sec mb-60">
-  <div class="flex">
-    <div class="ttl3">
+  <div class="wrap">
+    <div class="txt-c ttl4">
       <h2>gallery</h2>
       <p>リードアーキテクトが<br>今までお任せいただいた施工</p>
     </div>
-    <div class="slide">
-      <ul class="slider-fr02">
+    <div class="">
+      <ul class="">
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/01.png" alt="スライドショー画像"></li>
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/02.png" alt="スライドショー画像"></li>
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/03.png" alt="スライドショー画像"></li>
@@ -108,7 +111,10 @@ get_header(); ?>
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/06.png" alt="スライドショー画像"></li>
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/07.png" alt="スライドショー画像"></li>
       </ul>
-    </div>
+      <div class="btn mt-1">
+        <a href="<?php echo $home;?>/photo">一覧を見る</a>
+      </div>
+  </div>
   </div>
 
 </section>

@@ -13,6 +13,9 @@ if (!is_home() && !is_front_page()) {
 }
 ?>
 <!-- パンく終了 -->
+<section>
+
+</section>
 
 <!-- フッター -->
 <footer>
@@ -28,10 +31,10 @@ if (!is_home() && !is_front_page()) {
         <div>
           <p class="ttl">わたしたちについて</p>
           <ul>
-            <li><a href="<?php echo $home ?>/company">会社情報</a></li>
+            <li><a href="<?php echo $home ?>/company">会社概要</a></li>
             <li><a href="<?php echo $home ?>/faq">よくあるご質問</a></li>
             <li><a href="<?php echo $home ?>/recruit">採用情報</a></li>
-            <li><a href="<?php echo $home ?>/event">内覧会</a></li>
+            <li><a href="<?php echo $home ?>/news">内覧会</a></li>
           </ul>
         </div>
         <div>
@@ -53,7 +56,7 @@ if (!is_home() && !is_front_page()) {
               <li><a href="<?php echo $home ?>/consul">コンサルティング</a></li>
               <li><a href="<?php echo $home ?>/revenue">収益物件</a></li>
               <li><a href="<?php echo $home ?>/special">特殊建築</a></li>
-              <li><a href="<?php echo $home ?>/works">事例紹介</a></li>
+              <li><a href="<?php echo $home ?>/gallery">事例紹介</a></li>
             </ul>
           </div>
         </div>
@@ -115,7 +118,7 @@ $(document).ready(function() {
      {
       breakpoint: 768, //767px以下のサイズに適用
       settings: {
-        slidesToShow:0.5,
+        slidesToShow:1,
       }
      }
    ]

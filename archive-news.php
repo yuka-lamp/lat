@@ -3,18 +3,12 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<section id="submv_img" class="mv list">
-    <h2 class=""><?php single_cat_title(); ?></h2>
+<section id="submv_img" class="mv">
+    <h2 class=""><?php echo get_the_title(); ?></h2>
 </section>
 
 <section id="works" class="sec oblique">
-<div class="wrap cat">
-  <p class="b">カテゴリ一覧</p>
-  <ul>
-    <li><a href="<?php echo $home ?>/gallery">全て</a></li>
-    <?php wp_list_categories('title_li=&exclude=1'); ?>
-  </ul>
-</div>
+
 <div class="wrap">
   <ul class="list">
     <?php if (have_posts()): while (have_posts()):

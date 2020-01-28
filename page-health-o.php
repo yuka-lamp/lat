@@ -84,6 +84,36 @@ get_header(); ?>
             <p class="gray">0宣言の家では健康・長持ち・快適という観点から、扱っているのは無垢フローリングのみ。木材独特のいい香りと、裸足で歩いた時の優しい肌触りが癒し効果を与えてくれます。</p>
           </div>
         </li>
+        <li class="flex">
+          <div class="img-wrap">
+            <img class="left" src="<?php echo $wp_url ?>/lib/images/health-o/slide/sozai_01.png" alt="無垢フローリング">
+          </div>
+          <div class="txt-wrap">
+            <p class="num gray">01</p>
+            <h4>無垢フローリング</h4>
+            <p class="gray">0宣言の家では健康・長持ち・快適という観点から、扱っているのは無垢フローリングのみ。木材独特のいい香りと、裸足で歩いた時の優しい肌触りが癒し効果を与えてくれます。</p>
+          </div>
+        </li>
+        <li class="flex">
+          <div class="img-wrap">
+            <img class="left" src="<?php echo $wp_url ?>/lib/images/health-o/slide/sozai_01.png" alt="無垢フローリング">
+          </div>
+          <div class="txt-wrap">
+            <p class="num gray">01</p>
+            <h4>無垢フローリング</h4>
+            <p class="gray">0宣言の家では健康・長持ち・快適という観点から、扱っているのは無垢フローリングのみ。木材独特のいい香りと、裸足で歩いた時の優しい肌触りが癒し効果を与えてくれます。</p>
+          </div>
+        </li>
+        <li class="flex">
+          <div class="img-wrap">
+            <img class="left" src="<?php echo $wp_url ?>/lib/images/health-o/slide/sozai_01.png" alt="無垢フローリング">
+          </div>
+          <div class="txt-wrap">
+            <p class="num gray">01</p>
+            <h4>無垢フローリング</h4>
+            <p class="gray">0宣言の家では健康・長持ち・快適という観点から、扱っているのは無垢フローリングのみ。木材独特のいい香りと、裸足で歩いた時の優しい肌触りが癒し効果を与えてくれます。</p>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -142,13 +172,65 @@ get_header(); ?>
           <h3>モデルハウスで<span class="main-color">本物</span>を実感。</h3>
           <p>京都市左京区にあるゼロ宣言の家モデルハウスです。<br>リード・アーキテクトの家づくりに少しでも興味をもっていただいたお客様はどなたでもご宿泊可能です。<br>また、ご見学もご予約いただければいつでも可能ですので、お気軽にお電話で問い合せくださいませ。</p>
           <div class="btn mt-2 txt-c">
-            <a href="http://jyuigaku.com/" target="_blank">TEL:0120-675-365</a>
+            <a href="<?php echo $home ?>/gallery" target="_blank">TEL:0120-675-365</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php
+$home = esc_url(home_url());
+$wp_url = get_template_directory_uri(); ?>
+<section id="gallery" class="sec">
+  <div class="wrap">
+    <div class="ttl3">
+      <h2>gallery</h2>
+      <p>リードアーキテクトの<br>内覧ができるOB宅</p>
+    </div>
+    <?php
+    $arg = array(
+      'posts_per_page' => 3,
+      'orderby' => 'date',
+      'order' => 'DESC',
+      'post_type' => 'gallery',
+      'category_name' => 'health-o',
+    );
+    $posts = get_posts($arg);
+    if ($posts): ?>
+    <ul class="flex m-60">
+    <?php foreach ($posts as $post):
+    $t = get_the_title();
+    $i = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+    $i_l = get_the_post_thumbnail_url(get_the_ID(), 'large');
+    $url = get_permalink();
+    $cats = get_the_category();
+    $tag = get_the_term_list($post->ID,'post_tag');
+    ?>
+      <li>
+        <a href="<?php echo $url; ?>">
+          <div class="img-wrap">
+            <img src="<?php echo $i_l; ?>" srcset="<?php echo $i_l; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
+          </div>
+        </a>
+        <a href="<?php echo $url; ?>">
+          <div class="txt-wrap">
+            <p class="gray"><?php echo $tag; ?></p>
+            <h3><?php echo $t; ?></h3>
+            <div class="link flex">
+              <p class="gray">詳しく見る</p>
+              <p class="main-color">READ MORE ■</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php endif; wp_reset_postdata(); ?>
+    <div class="btn mt-1">
+      <a href="<?php echo $home;?>/gallery/order">一覧をみる</a>
+    </div>
+  </div>
+</section>
 
-<?php get_template_part( 'gallery' ); ?>
 <?php get_footer();

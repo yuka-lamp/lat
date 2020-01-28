@@ -2,7 +2,8 @@
 header {}
 
 header>.wrap>nav>ul {
-  width: 60%
+  width: 70%;
+  align-items: center;
 }
 
 header nav {
@@ -14,12 +15,25 @@ header nav {
   padding: 0 50px;
   box-sizing: border-box;
   overflow: inherit !important;
+  border-bottom: 2px solid #E6EBE1;
+}
+
+button::after {
+  content: 'MENU';
+  font-size: 12px;
+  color: #7FC600;
+  letter-spacing: -1px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  text-align: center;
 }
 
 /*--ナビ装飾追加--*/
 .drawer-menu-item {
   font-size: 0.9rem;
-  color: #707070
+  color: #707070;
+  position: relative;
 }
 
 header>.wrap>nav>ul>li {
@@ -38,31 +52,23 @@ header>.wrap>nav>ul>li:hover>a::before {
   color: #7FC600
 }
 
-/*--ナビお問い合わせボタン--*/
-header>.wrap>nav>ul>li:last-child {
-  position: relative;
-  border: 2px solid #7FC600;
-  margin: 0 0 0 1rem;
-  transition: 1s;
+/*--li最後2つ--*/
+header ul li.icon, header ul li.tel {
+  font-size: 0.7rem;
+  text-align: center;
 }
 
-header>.wrap>nav>ul>li:last-child a {
-  color: #7FC600;
-  font-weight: bold;
-  padding: .75rem 1.7rem
+header ul li.icon, header ul li.tel .img-wrap {
+  width: 90%
 }
 
-header>.wrap>nav>ul>li:last-child:hover {
-  background: #7FC600;
-}
-
-header>.wrap>nav>ul>li:last-child:hover a {
-  color: #fff
-}
-
-header>.wrap>nav>ul>li:last-child>a::before, header>.wrap>nav>ul>li:last-child:hover>a::before {
+header ul li.icon a::before, header ul li.tel a::before {
   content: '';
-  margin: 0
+  display: none
+}
+
+header ul li.icon .img-wrap {
+  width: 20px
 }
 
 /*--▼印削除--*/
@@ -113,7 +119,7 @@ header>.wrap>nav>ul>li:last-child>a::before, header>.wrap>nav>ul>li:last-child:h
 }
 
 .drawer-hamburger {
-  padding: 23px .75rem 33px
+  padding: 16px .75rem 30px
 }
 
 /*--------------------------------------------レスポンシブ*/
@@ -136,48 +142,64 @@ header>.wrap>nav>ul>li:last-child>a::before, header>.wrap>nav>ul>li:last-child:h
     padding: 0
   }
 
+  header>.wrap>nav {
+    display: flex;
+    align-items: center;
+    right: -100vw !important;
+    height: 100% !important;
+    width: 65% !important;
+    padding: 0;
+    font-weight: bold;
+  }
+
   header>.wrap>nav>ul {
-    width: 100%
+    width: 100%;
+  }
+
+  header>.wrap>nav>ul .sub-menu {
+    font-size: 0.8rem
   }
 
   header>.wrap>a>img {
     width: 255px
   }
 
-  header nav {
-    right: -100vw !important;
-    height: 100% !important;
-    width: 50% !important;
-    align-items: flex-start;
-    padding: 40px 0;
-    overflow: scroll !important;
-  }
-
   .drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-nav, .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
     right: 0 !important;
   }
 
-  /*--ナビ装飾追加--*/
-  header>.wrap>nav>ul>li>a {
-    border-bottom: 2px solid #EBF0E6;
-  }
-
+  /*--頭の□削除--*/
   header>.wrap>nav>ul>li>a::before, header>.wrap>nav>ul>li:hover>a::before {
-    content: '';
-    margin-right: 0;
+    content: url('../images/common/arrow_02.png');
+    position: absolute;
+    top: 30%;
+    right: 5px;
   }
 
-  header>.wrap>nav>ul>li:last-child {
-    margin: 10px
-  }
-
-  /*--ドロップダウンメニュー--*/
-  .drawer-dropdown-menu {
-    position: inherit;
+  header>.wrap>nav>ul>li:nth-child(1)>a::before {
+    display: none
   }
 
   .drawer-menu-item {
-    font-size: 1rem
+    padding: 15px 0 15px 20px;
+    font-size: 1rem;
+    border-bottom: 1px solid #EBF0E6;
+    position: relative;
+  }
+
+  header>.wrap>nav>ul>li:nth-child(1) {
+    border-top: 1px solid #EBF0E6;
+  }
+
+  .sub-menu {
+    border-bottom: 1px solid #EBF0E6;
+    margin-top: 15px
+  }
+
+  .sub-menu li {
+    display: flex;
+    align-items: center;
+    padding: 0 0 15px 30px;
   }
 }
 
