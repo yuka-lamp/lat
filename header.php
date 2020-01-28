@@ -24,7 +24,7 @@ $slug      = $post_data->post_name;
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/front.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/mv.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sec-contact.css">
-<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sec-gallery.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sec-works.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/ul-style.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/health.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/design.css">
@@ -91,7 +91,7 @@ $slug      = $post_data->post_name;
           </ul>
           <!--PC用サービスメニュー終わり-->
         </li>
-        <li><a class="drawer-menu-item" href="<?php echo $home ?>/gallery">事例紹介</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>

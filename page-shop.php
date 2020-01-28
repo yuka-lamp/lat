@@ -119,10 +119,10 @@ get_header(); ?>
 <?php
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri(); ?>
-<section id="gallery" class="sec">
+<section id="sec-works" class="sec">
   <div class="wrap">
     <div class="ttl3">
-      <h2>gallery</h2>
+      <h2>works</h2>
       <p>リードアーキテクトの<br>内覧ができるOB宅</p>
     </div>
     <?php
@@ -130,7 +130,7 @@ $wp_url = get_template_directory_uri(); ?>
       'posts_per_page' => 3,
       'orderby' => 'date',
       'order' => 'DESC',
-      'post_type' => 'gallery',
+      'post_type' => 'works',
       'category_name' => 'shop',
     );
     $posts = get_posts($arg);

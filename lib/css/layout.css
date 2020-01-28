@@ -68,15 +68,14 @@
 ------------------------------------------------------*/
 .layout-02 {
   width: 100%;
-  border-top: 1px solid #EBF0E6;
-  border-bottom: 1px solid #EBF0E6;
+  background: url('../images/common/contact_bg.png');
+  background-repeat: repeat;
   text-align: center;
   padding: 0 60px;
   box-sizing: border-box;
 }
 
 .layout-02 h3 {
-  background: #fff;
   padding: 0 10px;
   display: inline-block;
   font-size: 1.5rem;
@@ -101,7 +100,7 @@
   width: 100%
 }
 
-.layout-02 ul li:nth-child(2) {
+.layout-02 ul li.slick-slide:nth-child(2) {
   margin: 0 10px
 }
 

@@ -3,14 +3,10 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<section id="submv_imgnone" class="mv list">
+<section id="submv_list" class="mv list">
   <div class="wrap">
-    <h2 class=""><?php single_cat_title(); ?></h2>
-    <p class="gray ml-1"><?php
-     $cat_id = get_query_var('cat');
-     $cat = get_category($cat_id);
-     echo $cat->category_nicename;
-    ?></p>
+    <h2 class="">フォトギャラリー</h2>
+    <p class="gray ml-1">PHOTO gallery</p>
   </div>
 </section>
 
@@ -42,11 +38,10 @@ get_header(); ?>
     }
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
     $cats = get_the_category();
-    $tag = get_the_term_list($post->ID,'post_tag');
     ?>
       <li>
         <a href="<?php the_permalink(); ?>" class="">
-        <p class="gray"><?php echo $tag; ?></p>
+        </p>
         <div class="img-wrap">
           <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
         </div>

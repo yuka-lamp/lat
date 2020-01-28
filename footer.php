@@ -56,7 +56,7 @@ if (!is_home() && !is_front_page()) {
               <li><a href="<?php echo $home ?>/consul">コンサルティング</a></li>
               <li><a href="<?php echo $home ?>/revenue">収益物件</a></li>
               <li><a href="<?php echo $home ?>/special">特殊建築</a></li>
-              <li><a href="<?php echo $home ?>/gallery">事例紹介</a></li>
+              <li><a href="<?php echo $home ?>/works">事例紹介</a></li>
             </ul>
           </div>
         </div>

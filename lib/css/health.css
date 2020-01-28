@@ -5,6 +5,10 @@ about-0
   width: 32%;
 }
 
+#about-0  .layout-02 {
+  padding: 0 60px 10px 60px;
+}
+
 /*--スライドショー--*/
 .layout-02 ul.slider-02>.slick-list>.slick-track>li {
   padding: 0 90px;
@@ -22,7 +26,7 @@ about-0
 }
 
 .layout-02 ul.slider-02 .num {
-  background: #EBF0E6;
+  background: #fff;
   font-size: 1.15rem;
   padding: 6px 10px;
   display: inline-block;
@@ -150,7 +154,7 @@ doctor
 model
 ------------------------------------------------------*/
 #model {
-  background: url('../images/common/contact_bg.png');
+  background: #F3F7EF;
   background-repeat: repeat;
   width: 100%
 }
