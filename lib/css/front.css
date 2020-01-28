@@ -38,11 +38,11 @@ about
   padding: 0;
   top: 60%;
   left: auto;
-  right: -1.5rem;
+  right: -1rem;
 }
 
 #about .prev-arrow {
-  left: -1.5rem;
+  left: -1rem;
   right: auto
 }
 
@@ -58,17 +58,19 @@ about
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
-  #about .layout-01 .under p {
-    width: 100%
+  #about .layout {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #about .txt-wrap {
+    width: 100%;
+    margin-bottom: 30px
   }
 }
 
 @media(max-width:480px) {
 
   /*--スマホたて--*/
-  #about .layout-01 {
-    width: 100%;
-  }
 
   #about .wrap {
     padding: 0 15px
@@ -143,7 +145,8 @@ service
 
   /*--スマホたて--*/
   #service ul li {
-    width: 100%
+    width: 100%;
+    margin-bottom: 2rem
   }
 }
 

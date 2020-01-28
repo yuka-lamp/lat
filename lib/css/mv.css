@@ -81,26 +81,21 @@
 }
 
 /*------------------------------------------------------
-下層MV 画像なし
+下層MV画像なし
 ------------------------------------------------------*/
 #submv_imgnone {
-  text-align: center;
-  padding: 60px 0
+  background: #E6EBE1;
+  padding: 40px 0 40px 60px;
 }
 
-#submv_imgnone h2 {
+#submv_imgnone h2, #submv_list p {
   display: inline-block;
-  font-size: 2rem;
   margin: 0
 }
 
-#submv_imgnone .wrap::after {
-  content: '';
-  display: block;
-  width: 75px;
-  height: 3px;
-  background: #7FC600;
-  margin: 60px auto 0 auto;
+#submv_imgnone p {
+  text-transform: uppercase;
+  display: inline;
 }
 
 /*--------------------------------------------レスポンシブ*/
@@ -108,12 +103,10 @@
 
   /*--スマホよこ--*/
   #submv_imgnone {
-    text-align: center;
-    padding: 60px 0 0 0
+    padding: 40px 0 40px 10px;
   }
-
-  #submv_imgnone .wrap::after {
-    margin: 30px auto;
+  #submv_imgnone h2,#submv_list p{
+    display: block;
   }
 }
 
@@ -232,37 +225,4 @@
   background: url('../images/gallery/mv.png');
   background-position: right;
   background-size: cover;
-}
-
-/*------------------------------------------------------
-一覧ページMV
-------------------------------------------------------*/
-#submv_list {
-  background: #E6EBE1;
-  padding: 40px 0 40px 60px;
-}
-
-#submv_list h2, #submv_list p {
-  display: inline-block;
-  margin: 0
-}
-
-#submv_list p {
-  text-transform: uppercase;
-}
-
-/*--------------------------------------------レスポンシブ*/
-@media(max-width:768px) {
-
-  /*--スマホよこ--*/
-  #submv_list {
-    padding: 40px 0 40px 10px;
-  }
-  #submv_list h2,#submv_list h2 span{
-    display: block;
-  }
-}
-
-@media(max-width:480px) {
-  /*--スマホたて--*/
 }

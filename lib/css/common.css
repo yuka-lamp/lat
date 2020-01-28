@@ -104,6 +104,9 @@ li>a {
   .flex {
     flex-wrap: wrap;
   }
+  .sec {
+    padding: 50px 0!important
+  }
 }
 
 @media(max-width:480px) {
