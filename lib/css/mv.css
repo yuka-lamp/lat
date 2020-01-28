@@ -6,7 +6,8 @@
 }
 
 .mv h2 {
-  font-size: 2rem
+  font-size: 26px;
+  letter-spacing: 1.3px
 }
 
 /*--------------------------------------------レスポンシブ*/
@@ -230,4 +231,22 @@
   background: url('../images/gallery/mv.png');
   background-position: right;
   background-size: cover;
+}
+
+/*------------------------------------------------------
+一覧ページ
+------------------------------------------------------*/
+
+#submv_list {
+  background: #E6EBE1;
+  padding: 40px 0 40px 60px;
+}
+
+#submv_list h2,#submv_list p {
+  display: inline-block;
+  margin: 0
+}
+
+#submv_list p {
+  text-transform: uppercase;
 }

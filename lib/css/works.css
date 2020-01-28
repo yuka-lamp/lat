@@ -1,67 +1,83 @@
 /*------------------------------------------------------
 リストスタイル01
 ------------------------------------------------------*/
+#works {
+  padding: 0 0 90px 0 !important
+}
+
 #works .wrap {
   width: 900px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 #works .cat {
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  background: #F3F7EF;
+  padding: 15px 0
 }
 
 #works .cat ul li {
   display: inline-block;
-  border: 1px solid #EBF0E6;
+  background: #fff;
   color: #333;
   margin: 0 5px 5px 0;
   font-size: 13px;
-  padding: 5px 10px
+  padding: 5px 15px;
+}
+
+#works .list-ttl {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #F3F7EF;
+  border-top: 2px solid #F3F7EF;
+  margin-bottom: 30px
+}
+
+#works .list-ttl h2 {
+  margin: 20px 0;
+  color: #7FC600;
+}
+
+#works .list-ttl h2 span {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 0 0 0 1rem;
+  color: #333
+}
+
+#works .list-ttl p {
+  margin: 0;
 }
 
 #works ul.list {
-  align-items: center;
-  border-top: 1px solid #EBF0E6;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #works ul.list li {
-  padding: 1rem;
-  padding: 30px 0;
-  width: 100%;
-  box-sizing: border-box;
-  border-bottom: 1px solid #EBF0E6;
+  width: 33.2%;
+  margin-bottom: 20px
 }
 
 #works ul.list li .img-wrap {
-  width: 200px;
-  height: 140px;
-}
-
-#works ul.list li .txt-wrap {
-  width: calc(100% - 200px);
-  padding-left: 40px;
-}
-
-#works ul.list li h3 {
-  font-size: 1.1rem;
-  margin: 7px 0
-}
-
-#works ul.list li .content p {
-  height: 3rem;
-  line-height: 1.5rem;
+  width: 100%;
+  height: 200px;
   overflow: hidden;
-  color: #8F8F8F
 }
 
-#works ul.list li span {
-  color: #7FC600;
-  font-size: 14px;
-  font-weight: bold;
-  display: inline-block;
+#works ul.list li .img-wrap img {
+  width: 100%
 }
 
-#works ul.list li span:nth-child(2) {
+#works ul.list li .txt-wrap {}
+
+#works ul.list li .txt-wrap h3 {
+  font-size: 1.15rem;
+  margin: 10px 0 0 0;
+}
+
+#works ul.list li .txt-wrap p {
+  font-size: 12px;
   color: #8F8F8F
 }
 
@@ -69,14 +85,8 @@
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
-  #works ul.list li .img-wrap {
-    width: 100px;
-    height: 70px;
-  }
-
-  #works ul.list li .txt-wrap {
-    width: calc(100% - 120px);
-    padding-left: 10px;
+  #works ul.list li {
+    width: 100%;
   }
 }
 
