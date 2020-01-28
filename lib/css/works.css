@@ -85,6 +85,24 @@
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
+  #works .list-ttl {
+    position: relative;
+  }
+
+  #works .list-ttl h2 {
+    border: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  #works .list-ttl p {
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px
+  }
+
   #works ul.list li {
     width: 100%;
   }

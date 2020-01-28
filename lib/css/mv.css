@@ -111,6 +111,7 @@
     text-align: center;
     padding: 60px 0 0 0
   }
+
   #submv_imgnone .wrap::after {
     margin: 30px auto;
   }
@@ -146,6 +147,7 @@
   #submv_img {
     height: 180px;
   }
+
   #submv_img h2 {
     text-align: center;
     left: 0;
@@ -160,7 +162,6 @@
 /*------------------------------------------------------
 各ページ画像設定
 ------------------------------------------------------*/
-
 #submv_img.order {
   background: url('../images/order/mv.png');
   background-position: right;
@@ -234,19 +235,34 @@
 }
 
 /*------------------------------------------------------
-一覧ページ
+一覧ページMV
 ------------------------------------------------------*/
-
 #submv_list {
   background: #E6EBE1;
   padding: 40px 0 40px 60px;
 }
 
-#submv_list h2,#submv_list p {
+#submv_list h2, #submv_list p {
   display: inline-block;
   margin: 0
 }
 
 #submv_list p {
   text-transform: uppercase;
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #submv_list {
+    padding: 40px 0 40px 10px;
+  }
+  #submv_list h2,#submv_list h2 span{
+    display: block;
+  }
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
 }

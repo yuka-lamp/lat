@@ -1,0 +1,49 @@
+/*------------------------------------------------------
+内覧会一覧
+------------------------------------------------------*/
+#news {}
+
+#news ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#news ul li {
+  width: 30%;
+  background: #F3F7EF
+}
+
+#news ul li .img-wrap, #news ul li .img-wrap img {
+  width: 100%;
+}
+
+#news ul li .img-wrap {
+  height: 200px;
+  overflow: hidden;
+  margin: 0
+}
+
+#news ul li .txt-wrap {
+  margin: 20px 0 20px 10px;
+  position: relative;
+}
+
+#news ul li .txt-wrap::after {
+  content: url('../images/common/arrow_01.png');
+  position: absolute;
+  top: 30%;
+  right: 10px;
+}
+
+#news ul li h3 {
+  font-size: 18px;
+  margin: 0
+}
+
+/*--------------------------------------------レスポンシブ*/
+
+@media(max-width:768px) {
+  #news ul li {
+    width: 100%;
+  }
+}

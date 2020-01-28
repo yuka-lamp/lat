@@ -3,12 +3,14 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<section id="submv_img" class="mv">
-    <h2 class=""><?php echo get_the_title(); ?></h2>
+<section id="submv_list" class="mv list">
+  <div class="wrap">
+    <h2 class="">内覧会</h2>
+    <p class="gray ml-1">WORKS</p>
+  </div>
 </section>
 
-<section id="works" class="sec oblique">
-
+<section id="news" class="sec oblique ">
 <div class="wrap">
   <ul class="list">
     <?php if (have_posts()): while (have_posts()):
@@ -18,21 +20,17 @@ get_header(); ?>
         $t = mb_substr($t, 0, 28, 'UTF-8').'…';
     }
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
-    $cats = get_the_category(); ?>
+    $cats = get_the_category();
+    ?>
       <li>
-        <a href="<?php the_permalink(); ?>" class="flex">
+        <a href="<?php the_permalink(); ?>" class="">
+        </p>
         <div class="img-wrap">
           <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
         </div>
         <div class="txt-wrap">
-          <p>
-            <?php foreach ($cats as $category) {
-                echo '<span>'.$category->name.'</span>';
-            } ?>
-            <span><?php echo get_the_date(); ?></span>
-          </p>
         <h3><?php echo $t; ?></h3>
-        <div class="content"><?php the_content(); ?></div>
+        <p class="gray"><?php the_date(); ?></p>
         </div>
       </a>
       </li>
