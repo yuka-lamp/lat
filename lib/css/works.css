@@ -56,7 +56,8 @@
 
 #works ul.list li {
   width: 33.2%;
-  margin-bottom: 20px
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 #works ul.list li .img-wrap {

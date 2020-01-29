@@ -69,9 +69,9 @@ $slug      = $post_data->post_name;
               <img src="<?php echo $wp_url ?>/lib/images/common/nav_03.png" alt="店舗建築">
               <p>店舗建築</p>
             </a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/large">
-              <img src="<?php echo $wp_url ?>/lib/images/common/nav_04.png" alt="大型建築">
-              <p>大型建築</p>
+            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/other">
+              <img src="<?php echo $wp_url ?>/lib/images/common/nav_04.png" alt="その他">
+              <p>その他</p>
             </a></li>
           </ul>
         </li>
@@ -116,8 +116,8 @@ $slug      = $post_data->post_name;
             <li><a class="" href="<?php echo $home ?>/shop">
               <p>店舗建築</p>
             </a></li>
-            <li><a class="" href="<?php echo $home ?>/large">
-              <p>大型建築</p>
+            <li><a class="" href="<?php echo $home ?>/other">
+              <p>その他</p>
             </a></li>
           </ul>
         </li>

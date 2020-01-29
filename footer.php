@@ -32,6 +32,8 @@ if (!is_home() && !is_front_page()) {
           <p class="ttl">わたしたちについて</p>
           <ul>
             <li><a href="<?php echo $home ?>/company">会社概要</a></li>
+            <li><a href="<?php echo $home ?>/works">事例紹介</a></li>
+            <li><a href="<?php echo $home ?>/gallery">ギャラリー</a></li>
             <li><a href="<?php echo $home ?>/faq">よくあるご質問</a></li>
             <li><a href="<?php echo $home ?>/recruit">採用情報</a></li>
             <li><a href="<?php echo $home ?>/news">内覧会</a></li>
@@ -44,7 +46,7 @@ if (!is_home() && !is_front_page()) {
               <li><a href="<?php echo $home ?>/order">注文住宅</a></li>
               <li><a href="<?php echo $home ?>/reform">リフォーム</a></li>
               <li><a href="<?php echo $home ?>/shop">店舗</a></li>
-              <li><a href="<?php echo $home ?>/large">大型建築</a></li>
+              <li><a href="<?php echo $home ?>/other">その他</a></li>
             </ul>
             <ul>
               <li><a href="<?php echo $home ?>/health-o">健康住宅</a></li>
@@ -56,7 +58,8 @@ if (!is_home() && !is_front_page()) {
               <li><a href="<?php echo $home ?>/consul">コンサルティング</a></li>
               <li><a href="<?php echo $home ?>/revenue">収益物件</a></li>
               <li><a href="<?php echo $home ?>/special">特殊建築</a></li>
-              <li><a href="<?php echo $home ?>/works">事例紹介</a></li>
+              <li><a href="<?php echo $home ?>/large">大型建築</a></li>
+              <li><a href="<?php echo $home ?>/reno">リノベーション</a></li>
             </ul>
           </div>
         </div>
@@ -65,7 +68,7 @@ if (!is_home() && !is_front_page()) {
   </div>
   <div class="small">
     <div class="wrap flex">
-      <p><a href="<?php echo $home ?>/pp">プライバシーポリシー</a>｜<a href="<?php echo $home ?>/sitemap">サイトマップ</a></p>
+      <p><a href="<?php echo $home ?>/privacy-policy">プライバシーポリシー</a>｜<a href="<?php echo $home ?>/sitemap">サイトマップ</a></p>
       <small class="d-block">(c) LEAD ARCHITECT.</small>
     </div>
   </div>
@@ -77,7 +80,6 @@ if (!is_home() && !is_front_page()) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 <script type="text/javascript" src="<?php echo $wp_url ?>/lib/js/slick.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function() {
   /*--drawer設定--*/
@@ -187,14 +189,6 @@ $(document).ready(function() {
   //   }, speed, "swing");
   //   return false;
   // });
-});
-$(window).on('load scroll', function() {
-  // pagetop表示
-  if ($(window).scrollTop() > 400) {
-    $('.pagetop').fadeIn(400);
-  } else {
-    $('.pagetop').fadeOut(400);
-  }
 });
 
 </script>

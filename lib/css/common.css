@@ -43,7 +43,7 @@ a:hover {
 
 ul li a:hover img {
   opacity: 0.6;
-  transition: 1s;
+  transition: .5s;
 }
 
 li>a {

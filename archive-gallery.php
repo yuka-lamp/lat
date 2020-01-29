@@ -3,14 +3,14 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<section id="submv_list" class="mv list">
+<section id="submv_imgnone" class="mv list">
   <div class="wrap">
     <h2 class="">フォトギャラリー</h2>
     <p class="gray ml-1">PHOTO gallery</p>
   </div>
 </section>
 
-<section id="works" class="sec oblique ">
+<section id="gallery" class="sec oblique ">
 <div class="cat">
   <div class="wrap">
     <p class="b mb-1">カテゴリ一覧</p>
@@ -22,7 +22,7 @@ get_header(); ?>
 </div>
 <div class="wrap">
   <div class="list-ttl flex">
-    <h2 class="ttl3">WORKS<span>事例一覧</span></h2>
+    <h2 class="ttl3">gallery<span>写真一覧</span></h2>
     <?php
       $custom_post_name = get_post_type_object(get_post_type())->name; // カスタム投稿タイプのスラッグを表示
       $count_post = wp_count_posts( $custom_post_name , 'readable' ); // カスタム投稿タイプのスラッグを指定
@@ -45,15 +45,10 @@ get_header(); ?>
         <div class="img-wrap">
           <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
         </div>
-        <div class="txt-wrap">
-        <h3><?php echo $t; ?></h3>
-        <p>
-          <?php foreach ($cats as $category) {
-              echo '<span>by '.$category->name.'</span>';
-          } ?>
-        </p>
+        </a>
+        <div class="mask">
+        	<div class="caption flex"><img src="<?php echo $wp_url ?>/lib/images/common/search.png" alt=""></div>
         </div>
-      </a>
       </li>
     <?php endwhile; endif; ?>
   </ul>

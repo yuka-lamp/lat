@@ -23,6 +23,28 @@ get_header(); ?>
     </div>
   </div>
 </section>
+<section id="model">
+  <div class="sec mt-60">
+    <div class="wrap">
+      <div class="ttl3">
+        <h2>model house</h2>
+        <p>健康住宅<br>モデルハウス内覧会</p>
+      </div>
+      <div class="grid mt-60">
+        <div class="img-wrap">
+          <img class="left" src="<?php echo $wp_url ?>/lib/images/health-o/model.png" alt="モデルハウスの様子">
+        </div>
+        <div class="txt-wrap">
+          <h3>モデルハウスで<span class="main-color">本物</span>を実感。</h3>
+          <p>京都市左京区にあるゼロ宣言の家モデルハウスです。<br>リード・アーキテクトの家づくりに少しでも興味をもっていただいたお客様はどなたでもご宿泊可能です。<br>また、ご見学もご予約いただければいつでも可能ですので、お気軽にお電話で問い合せくださいませ。</p>
+          <div class="btn mt-2 txt-c">
+            <a href="<?php echo $home ?>/news" target="_blank">TEL:0120-675-365</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <?php
 $home = esc_url(home_url());

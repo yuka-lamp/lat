@@ -67,7 +67,7 @@ get_header(); ?>
         </div>
         <div class="link flex">
           <p class="gray">詳しく見る</p>
-          <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
+          <p class="main-color" href="<?php echo $home ?>/reform">READ MORE ■</p>
         </div>
       </div>
       </a>
@@ -84,24 +84,24 @@ get_header(); ?>
         </div>
         <div class="link flex">
           <p class="gray">詳しく見る</p>
-          <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
+          <p class="main-color" href="<?php echo $home ?>/shop">READ MORE ■</p>
         </div>
       </div>
       </a>
     </li>
     <li>
-      <a href="<?php echo $home ?>/large">
+      <a href="<?php echo $home ?>/other">
       <div class="img-wrap">
         <img src="<?php echo $wp_url ?>/lib/images/front/service04.png" alt="">
       </div>
       <div class="txt-wrap">
         <div>
         <p class="main-color b">04</p>
-        <h3>大型建築</h3>
+        <h3>その他</h3>
         </div>
         <div class="link flex">
           <p class="gray">詳しく見る</p>
-          <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
+          <p class="main-color" href="<?php echo $home ?>/other">READ MORE ■</p>
         </div>
       </div>
       </a>

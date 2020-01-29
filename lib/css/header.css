@@ -26,6 +26,7 @@ header nav {
   box-sizing: border-box;
   overflow: inherit !important;
   border-bottom: 2px solid #E6EBE1;
+  border-top: 5px solid #7FC600;
 }
 
 button.drawer-toggle::after {

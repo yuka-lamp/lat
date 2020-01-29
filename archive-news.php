@@ -3,10 +3,10 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<section id="submv_list" class="mv list">
+<section id="submv_imgnone" class="mv list">
   <div class="wrap">
     <h2 class="">内覧会</h2>
-    <p class="gray ml-1">WORKS</p>
+    <p class="gray ml-1">open house</p>
   </div>
 </section>
 
