@@ -5,8 +5,9 @@ about-0
   width: 32%;
 }
 
-#about-0  .layout-02 {
+#about-0 .layout-02 {
   padding: 0 60px 10px 60px;
+  margin: 5rem 0 0 0;
 }
 
 /*--スライドショー--*/
@@ -26,7 +27,8 @@ about-0
 }
 
 .layout-02 ul.slider-02 .num {
-  background: #fff;
+  background: #7FC600;
+  color: #fff;
   font-size: 1.15rem;
   padding: 6px 10px;
   display: inline-block;
@@ -64,13 +66,13 @@ about-0
   margin: 0 0 60px 0;
 }
 
-.slick-dots {
+.layout-02 .slick-dots {
   bottom: -40px;
 }
 
-.slick-dots li {
+.layout-02 .slick-dots li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0;
   padding: 0;
   width: 20px !important
 }
@@ -87,8 +89,15 @@ about-0
 @media(max-width:480px) {
 
   /*--スマホたて--*/
+  #about-0 .layout-02 {
+    padding: 0;
+    margin: 3rem 0 0 0;
+  }
+
   .layout-02 ul.slider-02>.slick-list>.slick-track>li {
-    padding: 0 10px;
+    padding: 0 1rem;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   #about-0 ul.ul-style-01 li {

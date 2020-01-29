@@ -116,6 +116,7 @@ $(document).ready(function() {
       breakpoint: 768, //767px以下のサイズに適用
       settings: {
         slidesToShow: 1,
+        centerMode:true,
       }
     }]
   });

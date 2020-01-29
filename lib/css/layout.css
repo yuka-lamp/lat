@@ -73,6 +73,7 @@
   text-align: center;
   padding: 0 60px;
   box-sizing: border-box;
+  border: 1px solid #F3F7EF;
 }
 
 .layout-02 h3 {
@@ -80,7 +81,7 @@
   display: inline-block;
   font-size: 1.5rem;
   position: relative;
-  top: -1.3rem;
+  top: -15px
 }
 
 .layout-02 div {

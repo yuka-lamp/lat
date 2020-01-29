@@ -14,7 +14,7 @@ ul.ul-style-01 li .txt-wrap {
   transition: .5s
 }
 
-ul.ul-style-01 li:hover .txt-wrap {
+ul.ul-style-01 li a:hover .txt-wrap {
   background: #EBF0E6;
 }
 
