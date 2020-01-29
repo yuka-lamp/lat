@@ -43,19 +43,13 @@ if (!is_home() && !is_front_page()) {
           <p class="ttl">サービス</p>
           <div class="flex">
             <ul>
-              <li><a href="<?php echo $home ?>/order">注文住宅</a></li>
-              <li><a href="<?php echo $home ?>/reform">リフォーム</a></li>
-              <li><a href="<?php echo $home ?>/shop">店舗</a></li>
-              <li><a href="<?php echo $home ?>/other">その他</a></li>
-            </ul>
-            <ul>
               <li><a href="<?php echo $home ?>/health-o">健康住宅</a></li>
               <li><a href="<?php echo $home ?>/design-o">デザイン住宅</a></li>
               <li><a href="<?php echo $home ?>/health-r">健康リフォーム</a></li>
               <li><a href="<?php echo $home ?>/design-r">デザインリフォーム</a></li>
+              <li><a href="<?php echo $home ?>/shop">店舗コンサル</a></li>
             </ul>
             <ul>
-              <li><a href="<?php echo $home ?>/consul">コンサルティング</a></li>
               <li><a href="<?php echo $home ?>/revenue">収益物件</a></li>
               <li><a href="<?php echo $home ?>/special">特殊建築</a></li>
               <li><a href="<?php echo $home ?>/large">大型建築</a></li>
@@ -79,6 +73,7 @@ if (!is_home() && !is_front_page()) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo $wp_url ?>/lib/js/slick.min.js"></script>
 <script>
 $(document).ready(function() {
@@ -179,16 +174,6 @@ $(document).ready(function() {
   $(".ac dt").on("click", function() {
     $(this).next().slideToggle();
   });
-  // $('a[href^="#"]').click(function() {
-  //   var speed = 500;
-  //   var href = $(this).attr("href");
-  //   var target = $(href == "#" || href == "" ? 'html' : href);
-  //   var position = target.offset().top;
-  //   $("html, body").animate({
-  //     scrollTop: position
-  //   }, speed, "swing");
-  //   return false;
-  // });
 });
 
 </script>

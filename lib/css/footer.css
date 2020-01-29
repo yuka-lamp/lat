@@ -34,7 +34,7 @@ footer .right ul {
   margin: 0
 }
 
-footer .right div:last-child ul:nth-child(2), footer .right div:last-child ul:nth-child(3) {
+footer .right div:last-child ul:nth-child(1), footer .right div:last-child ul:nth-child(2) {
   width: 170px;
 }
 

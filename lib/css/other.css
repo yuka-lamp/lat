@@ -34,16 +34,20 @@
 
 #perfor .flex {
   justify-content: center;
+  padding: 40px 0 !important
 }
 
 #perfor .flex span {
-  font-size: 4rem
+  font-size: 4rem;
+  margin: -10px .5rem 0 .5rem
 }
 
 #perfor .flex p {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0
+  margin: 0;
+  align-items: center;
+  display: flex;
 }
 
 #perfor .flex p:nth-child(2) {
@@ -76,6 +80,10 @@
 
   #company ul li p:last-child {
     width: 100%
+  }
+
+  #perfor .flex p {
+    margin: -3rem 0
   }
 }
 
