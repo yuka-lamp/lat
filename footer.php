@@ -75,6 +75,7 @@ if (!is_home() && !is_front_page()) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo $wp_url ?>/lib/js/slick.min.js"></script>
+<script type="text/javascript" src="<?php echo $wp_url ?>/lib/js/lightbox.min.js"></script>
 <script>
 $(document).ready(function() {
   /*--drawer設定--*/

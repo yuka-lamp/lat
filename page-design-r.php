@@ -38,8 +38,9 @@ get_header(); ?>
           <h3>モデルハウスで<span class="main-color">本物</span>を実感。</h3>
           <p>京都市左京区にあるゼロ宣言の家モデルハウスです。<br>リード・アーキテクトの家づくりに少しでも興味をもっていただいたお客様はどなたでもご宿泊可能です。<br>また、ご見学もご予約いただければいつでも可能ですので、お気軽にお電話で問い合せくださいませ。</p>
           <div class="btn mt-2 txt-c">
-            <a href="<?php echo $home ?>/news" target="_blank">TEL:0120-675-365</a>
+            <a href="tel:0120-675-365" target="_blank">電話で問い合わせる</a>
           </div>
+          <a href="tel:0120-675-365" target="_blank"><p class="txt-c">TEL:0120-675-365</p></a>
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ $slug      = $post_data->post_name;
 <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick.css" />
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/lightbox.css" />
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick-theme.css"/>
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/first.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/common.css">
