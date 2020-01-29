@@ -14,12 +14,12 @@ get_header(); ?>
             <p class="main-color b">01</p>
             <p class="main-color b">helth</p>
             <h2 class="m-30">健康住宅</h2>
+            <div class="link txt-c mt-1">
+              <p class="main-color">READ MORE ></p>
+            </div>
           </div>
           <div class="img-wrap">
             <img src="<?php echo $wp_url ?>/lib/images/order/01.png" alt="健康住宅">
-          </div>
-          <div class="link txt-r mt-1">
-            <p class="main-color">READ MORE ■</p>
           </div>
         </a>
       </li>
@@ -29,12 +29,12 @@ get_header(); ?>
             <p class="main-color b">02</p>
             <p class="main-color b">design</p>
             <h2 class="m-30">デザイン住宅</h2>
+            <div class="link txt-c mt-1">
+              <p class="main-color">READ MORE ></p>
+            </div>
           </div>
           <div class="img-wrap">
             <img src="<?php echo $wp_url ?>/lib/images/order/02.png" alt="デザイン住宅">
-          </div>
-          <div class="link txt-r mt-1">
-            <p class="main-color">READ MORE ■</p>
           </div>
         </a>
       </li>

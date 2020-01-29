@@ -11,6 +11,15 @@ ul.ul-style-01 li .txt-wrap {
   border-right: 1px solid #EBF0E6;
   display: flow-root;
   padding: 0 20px 20px 20px;
+  transition: .5s
+}
+
+ul.ul-style-01 li:hover .txt-wrap {
+  background: #EBF0E6;
+}
+
+ul.ul-style-01 li a:hover img {
+  opacity: 1
 }
 
 ul.ul-style-01 li .txt-wrap>h2 {

@@ -243,12 +243,11 @@ li>a {
   color: #fff;
   position: relative;
   min-width: 300px;
-  transition: 1.5s
+  transition: .5s
 }
 
-.btn a:hover #contact-form button:hover, #contact-form input[type="submit"]:hover {
-  color: #212529;
-  background: #fff
+.btn a:hover, #contact-form button:hover, #contact-form input[type="submit"]:hover {
+  opacity: .7
 }
 
 .btn a::after {
