@@ -1,18 +1,15 @@
 /*------------------------------------------------------
 余白調整
 ------------------------------------------------------*/
-
-#about,#service,#fr-gallery {
-  padding: 90px 0!important
+#about, #service, #fr-gallery {
+  padding: 90px 0 !important
 }
 
 /*------------------------------------------------------
 about
 ------------------------------------------------------*/
 #about {
-  padding: 90px 0 160px 0!important
-}
-#about .wrap {
+  padding: 90px 0 160px 0 !important;
   background: url('../images/front/about_bg.png');
   background-size: cover;
   background-position: right;
@@ -80,16 +77,20 @@ about
   position: relative;
   bottom: -3rem;
   left: -123%;
+  display: flex !important;
+  align-items: stretch;
 }
 
 #about .slick-dots li {
   width: 20% !important;
+  height: 140px!important;
   margin: 0 !important
 }
 
 #about .slick-dots li img {
   width: 100% !important;
-  height: auto !important
+  height: 100% !important;
+  object-fit: cover;
 }
 
 #about .slick-dotted.slick-slider {
@@ -110,6 +111,7 @@ about
     margin-bottom: 30px;
     margin: 0;
   }
+
   #about .slick-dots {
     width: 100% !important;
     left: 0;
@@ -126,6 +128,10 @@ about
   #about .img-wrap {
     width: 100%;
     height: auto;
+  }
+
+  #about .slick-dots {
+    height: 51px !important
   }
 }
 

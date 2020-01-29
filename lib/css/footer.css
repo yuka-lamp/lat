@@ -63,7 +63,7 @@ footer .right ul li a {
   align-items: center;
 }
 
-.small p {
+.small p, .small small {
   margin: 0;
   font-size: 12px
 }

@@ -108,14 +108,14 @@ get_header(); ?>
     </li>
   </ul>
 </section>
-<section id="fr-gallery" class="sec mb-60">
+<section id="gallery" class="sec">
   <div class="wrap">
     <div class="txt-c ttl4">
       <h2>gallery</h2>
       <p>リードアーキテクトが<br>今までお任せいただいた施工</p>
     </div>
     <div class="">
-      <ul class="">
+      <ul class="list">
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/01.png" alt="スライドショー画像"></li>
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/02.png" alt="スライドショー画像"></li>
         <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/03.png" alt="スライドショー画像"></li>

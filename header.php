@@ -38,6 +38,9 @@ $slug      = $post_data->post_name;
 <body class="drawer drawer--right">
 
 <!-- ヘッダー -->
+<div class="pagetop">
+  <a href="#pagetop"><img src="<?php echo $wp_url ?>/lib/images/common/pagetop.svg" alt="矢印"></a>
+</div>
 <header id="header">
   <div class="wrap">
     <a class="sp-only" href="<?php echo $home ?>">
@@ -110,6 +113,9 @@ $slug      = $post_data->post_name;
 <!-- ヘッダー終了 -->
 
 <!-- メインビジュアル開始 -->
+<div id="pagetop">
+
+</div>
 <?php if (is_home() || is_front_page()): ?>
 <section id="mv-front" class="mv">
   <div class="txt-wrap">
