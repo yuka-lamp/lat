@@ -9,13 +9,26 @@ get_header(); ?>
       <p>リードアーキテクトは設計と工事をワンストップで担当するため、お客様にとって最適な建築のご提案をフルオーダーで行うことができます。</p>
     </div>
     <div class="img-wrap">
+      <?php
+      $arg = array(
+        'posts_per_page' => 5,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'post_type' => 'gallery',
+      );
+      $posts = get_posts($arg);
+      if ($posts): ?>
       <ul class="slider-fr01">
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/01.png" alt="施工様子01"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/02.png" alt="施工様子02"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/03.png" alt="施工様子03"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/04.png" alt="施工様子04"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/slide/05.png" alt="施工様子05"></li>
+      <?php foreach ($posts as $post):
+      $i = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+      $i_l = get_the_post_thumbnail_url(get_the_ID(), 'large');
+      ?>
+        <li>
+          <img src="<?php echo $i_l; ?>" srcset="<?php echo $i_l; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
+        </li>
+      <?php endforeach; ?>
       </ul>
+      <?php endif; wp_reset_postdata(); ?>
     </div>
   </div>
 </section>

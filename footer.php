@@ -155,17 +155,11 @@ $(document).ready(function() {
    ]
   });
   $('.slider-fr01').slick({
-    autoplay:true,
-    autoplaySpeed:2000,
-    dots:false,
-    arrows:true,
-    slidesToShow:1,
-    slidesToScroll:1,
+    dots: true,
     customPaging: function(slider, i) {
-    return $('<button type="button" />').text(i + 1);
-  },
-    prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/front/arrow_l.png" class="slide-arrow prev-arrow">',
-    nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/front/arrow_r.png" class="slide-arrow next-arrow">',
+      var thumbSrc = $(slider.$slides[i]).find('img').attr('src');
+      return '<img src="' + thumbSrc + '">';
+    }
   });
   $('.slider-fr02').slick({
     autoplay:true,
