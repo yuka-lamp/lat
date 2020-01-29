@@ -165,7 +165,7 @@ $wp_url = get_template_directory_uri(); ?>
     </ul>
     <?php endif; wp_reset_postdata(); ?>
     <div class="btn mt-1">
-      <a href="<?php echo $home;?>/gallery/order">一覧をみる</a>
+      <a href="<?php echo $home;?>/works">一覧をみる</a>
     </div>
   </div>
 </section>
