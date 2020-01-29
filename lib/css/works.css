@@ -55,9 +55,22 @@
 }
 
 #works ul.list li {
-  width: 33.2%;
-  margin: 0;
+  width: 30%;
+  margin: 0 auto;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.tag {
+  background: #7FC600;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 13px;
+  position: absolute;
+  top: 3px;
+  left: 3px
 }
 
 #works ul.list li .img-wrap {

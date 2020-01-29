@@ -148,11 +148,19 @@ $(document).ready(function() {
   });
   $('.slider-fr01').slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     customPaging: function(slider, i) {
       var thumbSrc = $(slider.$slides[i]).find('img').attr('src');
       return '<img src="' + thumbSrc + '">';
-    }
+    },
+    prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_l.png" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">',
+    responsive: [{
+      breakpoint: 768, //767px以下のサイズに適用
+      settings: {
+        slidesToShow: 1
+      }
+    }]
   });
   $('.slider-fr02').slick({
     autoplay: true,

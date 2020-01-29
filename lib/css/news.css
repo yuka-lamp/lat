@@ -10,7 +10,8 @@
 
 #news ul li {
   width: 30%;
-  background: #F3F7EF
+  background: #F3F7EF;
+  position: relative;
 }
 
 #news ul li .img-wrap, #news ul li .img-wrap img {

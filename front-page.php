@@ -108,27 +108,35 @@ get_header(); ?>
     </li>
   </ul>
 </section>
-<section id="gallery" class="sec">
-  <div class="wrap">
-    <div class="txt-c ttl4">
+<section id="fr-gallery" class="sec">
+  <div class="flex">
+    <div class="ttl3">
       <h2>gallery</h2>
       <p>リードアーキテクトが<br>今までお任せいただいた施工</p>
-    </div>
-    <div class="">
-      <ul class="list">
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/01.png" alt="スライドショー画像"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/02.png" alt="スライドショー画像"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/03.png" alt="スライドショー画像"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/04.png" alt="スライドショー画像"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/05.png" alt="スライドショー画像"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/06.png" alt="スライドショー画像"></li>
-        <li><img src="<?php echo $wp_url ?>/lib/images/front/gallery/07.png" alt="スライドショー画像"></li>
-      </ul>
       <div class="btn mt-1">
-        <a href="<?php echo $home;?>/photo">一覧を見る</a>
+        <a href="<?php echo $home;?>/gallery">ギャラリーページへ</a>
       </div>
-  </div>
-  </div>
+    </div>
+    <?php
+    $arg = array(
+      'posts_per_page' => 5,
+      'orderby' => 'date',
+      'order' => 'DESC',
+      'post_type' => 'gallery',
+    );
+    $posts = get_posts($arg);
+    if ($posts): ?>
+    <div class="slide">
+    <ul class="slider-fr02">
+    <?php foreach ($posts as $post):
+    $i = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+    ?>
+    <li><img src="<?php echo $i_l; ?>" alt="<?php echo $t; ?>"></li>
+    <?php endforeach; ?>
+    </ul>
+    <?php endif; wp_reset_postdata(); ?>
+    </div>
+</section>
 
 </section>
 <?php get_footer();

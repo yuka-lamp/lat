@@ -1,7 +1,7 @@
 /*------------------------------------------------------
 余白調整
 ------------------------------------------------------*/
-#about, #service, #fr-gallery {
+#about, #service {
   padding: 90px 0 !important
 }
 
@@ -42,10 +42,15 @@ about
   margin: 0
 }
 
-#about .layout .img-wrap ul li>img {
+#about .layout .img-wrap ul li {
   width: 440px;
   height: 250px;
-  overflow: hidden;
+}
+
+#about .layout .img-wrap ul li>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
 }
 
 #about .next-arrow, #about .prev-arrow {
@@ -83,7 +88,7 @@ about
 
 #about .slick-dots li {
   width: 20% !important;
-  height: 140px!important;
+  height: 140px !important;
   margin: 0 !important
 }
 
@@ -209,10 +214,12 @@ gallery
 #fr-gallery {
   align-items: center;
   position: relative;
+  padding: 90px 0!important
 }
 
 #fr-gallery::before {
   content: '';
+  background: url('../images/common/contact_bg.png');
   width: 50%;
   height: 100%;
   position: absolute;
@@ -221,14 +228,49 @@ gallery
   z-index: -1
 }
 
-#fr-gallery .ttl4 {
+#fr-gallery .ttl3 {
+  width: 25%;
+  padding: 0 3rem;
   box-sizing: border-box;
-  margin-bottom: 60px
+  position: relative;
 }
 
-#fr-gallery .ttl4 h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
+#fr-gallery .ttl3::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #212529;
+  position: absolute;
+  right: -90px;
+  top: 30px;
+  display: block;
+  z-index: 1;
+}
+
+#fr-gallery .slide {
+  width: 70%
+}
+
+#fr-gallery .ttl3>h2 {
+  border: none;
+  padding: none;
+  display: block;
+  margin: 0 0 2rem
+}
+
+#fr-gallery .ttl3>h2::after {
+  content: '';
+  width: 70px;
+  height: 1px;
+  background: #333;
+}
+
+#fr-gallery .ttl3 p {
+  margin: 0
+}
+
+#fr-gallery .btn a {
+  min-width: 250px
 }
 
 /*--------------------------------------------レスポンシブ*/
@@ -256,5 +298,9 @@ gallery
 
   #fr-gallery .ttl3>h2, #fr-gallery .ttl3>p {
     margin: 0 0 1rem 0
+  }
+
+  #fr-gallery .ttl3::after {
+    display: none
   }
 }

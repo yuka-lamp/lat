@@ -40,15 +40,12 @@ get_header(); ?>
     $cats = get_the_category();
     ?>
       <li>
-        <a href="<?php the_permalink(); ?>" class="">
+        <a>
         </p>
         <div class="img-wrap">
           <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
         </div>
         </a>
-        <div class="mask">
-        	<div class="caption flex"><img src="<?php echo $wp_url ?>/lib/images/common/search.png" alt=""></div>
-        </div>
       </li>
     <?php endwhile; endif; ?>
   </ul>

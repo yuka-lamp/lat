@@ -21,10 +21,11 @@ get_header(); ?>
     }
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
     $cats = get_the_category();
+    $tag = get_the_term_list(get_the_ID(),'post_tag');
     ?>
       <li>
         <a href="<?php the_permalink(); ?>" class="">
-        </p>
+        <p class="tag"><?php echo $tag; ?></p>
         <div class="img-wrap">
           <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
         </div>

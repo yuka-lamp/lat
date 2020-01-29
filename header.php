@@ -51,21 +51,21 @@ $slug      = $post_data->post_name;
     </button>
     <nav class="drawer-nav flex" role="navigation">
       <a href="<?php echo $home ?>">
-        <img src="<?php echo $wp_url ?>/lib/images/common/logo.png" alt="リードアーキテクトロゴ">
+        <img src="<?php echo $wp_url ?>/lib/images/common/logo.png" alt="リードアーキテクトロゴ" style="width: 250px;">
       </a>
       <ul class="drawer-menu flex">
         <li class="drawer-dropdown">
           <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">サービス紹介<span class="drawer-caret"></span></a>
           <ul class="drawer-dropdown-menu">
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/health-o">健康住宅</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/design-o">デザイン住宅</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/health-r">健康リフォーム</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/design-r">デザインリフォーム</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/shop">店舗コンサル</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/revenue">収益物件</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/special">特殊建築</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/large">大型建築</a></li>
-            <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/reno">リノベーション</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/health-o">健康住宅</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/design-o">デザイン住宅</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/health-r">健康リフォーム</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/design-r">デザインリフォーム</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/shop">店舗コンサル</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/revenue">収益物件</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/special">特殊建築</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/large">大型建築</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/reno">リノベーション</a></li>
           </ul>
         </li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
@@ -114,7 +114,7 @@ $slug      = $post_data->post_name;
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
-        <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
+        <li class="btn"><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
         <li class="tel txt-c">
           <a class="drawer-menu-item" href="tel:075-693-2880">
             <div class="img-wrap">
@@ -135,11 +135,11 @@ $slug      = $post_data->post_name;
 <?php if (is_home() || is_front_page()): ?>
 <section id="mv-front" class="mv">
   <div class="txt-wrap">
-    <p>スタッフ全員が建築資格を持つ</p>
-    <h2>技術者集団。</h2>
-    <div class="img-wrap">
-      <img src="<?php echo $wp_url ?>/lib/images/front/mv_ttl.svg" alt="スタッフ全員が建築資格を持つ技術者集団。">
-    </div>
+    <h2>Technicians<br>Group</h2>
+    <p>スタッフ全員が<br class="sp-only">建築資格を持つ技術者集団。</p>
+  </div>
+  <div class="img-wrap">
+    <img src="<?php echo $wp_url ?>/lib/images/front/mv_ttl.svg" alt="スタッフ全員が建築資格を持つ技術者集団。">
   </div>
 </section>
 <?php get_template_part( 'contact' ); ?>

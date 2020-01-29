@@ -49,6 +49,10 @@ button.drawer-toggle::after {
   padding: 0
 }
 
+.drawer-menu-item:hover {
+  color: #7FC600;
+}
+
 header>.wrap>nav>ul {
   justify-content: flex-end;
 }
@@ -59,18 +63,6 @@ header>.wrap>nav>ul>li {
   padding: 0 10px;
   box-sizing: border-box;
   white-space: nowrap
-}
-
-header>.wrap>nav>ul>li>a::before {
-  content: '□';
-  color: #E6EBE1;
-  margin-right: 5px;
-  transition: 1s;
-}
-
-header>.wrap>nav>ul>li:hover>a::before {
-  content: '■';
-  color: #7FC600
 }
 
 /*--li最後2つ--*/
@@ -104,7 +96,7 @@ header ul li.icon .img-wrap {
 }
 
 .drawer-dropdown-menu li {
-  padding: 12px;
+  padding: 0 12px;
   width: 300px;
   box-sizing: border-box;
   background: #F3F7EF;
@@ -113,7 +105,7 @@ header ul li.icon .img-wrap {
 
 .drawer-dropdown-menu li:hover {
   background: #EBF0E6;
-  transition: 1s;
+  transition: .5s;
 }
 
 .drawer-dropdown-menu li:last-child {
@@ -125,6 +117,17 @@ header ul li.icon .img-wrap {
   padding: 0;
   margin: 0;
   transition: color 0.3s ease 0.5s;
+  position: relative;
+  color: #212529;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.drawer-dropdown-menu li a::after {
+  content: url('../images/common/arrow_01.png');
+  position: absolute;
+  top: -2%;
+  right: 5px;
 }
 
 .drawer-dropdown-menu li a img, .drawer-dropdown-menu li a p {
@@ -144,6 +147,25 @@ header ul li.icon .img-wrap {
   padding: 16px .75rem 30px
 }
 
+/*--contactボタン--*/
+.drawer-nav .btn {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  margin: 1rem 10px 0 10px;
+}
+
+.drawer-nav .btn a {
+  color: #fff;
+  padding: 20px 0;
+  min-width: 100%
+}
+
+.drawer-dropdown.open>.drawer-dropdown-menu {
+  width: auto
+}
+
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:1180px) {
 
@@ -151,6 +173,7 @@ header ul li.icon .img-wrap {
   header>.wrap>nav>ul {
     width: 90%
   }
+
   .pagetop {
     bottom: 10px;
     right: 10px;
@@ -193,6 +216,9 @@ header ul li.icon .img-wrap {
   .drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-nav, .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
     right: 0 !important;
   }
+  header>.wrap>nav>ul>li {
+    padding: 0;
+  }
 
   /*--頭の□削除--*/
   header>.wrap>nav>ul>li>a::before, header>.wrap>nav>ul>li:hover>a::before {
@@ -219,13 +245,23 @@ header ul li.icon .img-wrap {
 
   .sub-menu {
     border-bottom: 1px solid #EBF0E6;
-    margin-top: 15px
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background: #F8FAF5
   }
 
   .sub-menu li {
-    display: flex;
-    align-items: center;
-    padding: 0 0 15px 30px;
+    padding: 15px 10px;
+    width: 49%;
+    border-bottom: 1px solid #EBF0E6;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+  }
+
+  .sub-menu li:nth-child(2n) {
+    border-left: 1px solid #EBF0E6;
   }
 }
 
