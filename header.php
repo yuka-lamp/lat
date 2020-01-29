@@ -15,7 +15,7 @@ $slug      = $post_data->post_name;
 <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick.css" />
-<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick-theme.css" />
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/slick-theme.css"/>
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/first.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/common.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/layout.css">
@@ -41,40 +41,22 @@ $slug      = $post_data->post_name;
 <div class="pagetop">
   <a href="#pagetop"><img src="<?php echo $wp_url ?>/lib/images/common/pagetop.svg" alt="矢印"></a>
 </div>
-<header id="header">
+
+<!--PC用サービスメニュー始まり-->
+<header id="header" class="pc-only">
   <div class="wrap">
-    <a class="sp-only" href="<?php echo $home ?>">
-      <img src="<?php echo $wp_url ?>/lib/images/common/logo.png" alt="リードアーキテクトロゴ">
-    </a>
     <button type="button" class="drawer-toggle drawer-hamburger">
         <span class="sr-only"></span>
         <span class="drawer-hamburger-icon"></span>
     </button>
     <nav class="drawer-nav flex" role="navigation">
-      <a class="pc-only" href="<?php echo $home ?>">
+      <a href="<?php echo $home ?>">
         <img src="<?php echo $wp_url ?>/lib/images/common/logo.png" alt="リードアーキテクトロゴ">
       </a>
       <ul class="drawer-menu flex">
         <li class="drawer-dropdown">
           <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">サービス紹介<span class="drawer-caret"></span></a>
-          <!--sp用サービスメニュー始まり-->
-          <ul class="sub-menu sp-only">
-            <li><a class="" href="<?php echo $home ?>/order">
-              <p>注文建築</p>
-            </a></li>
-            <li><a class="" href="<?php echo $home ?>/reform">
-              <p>リフォーム</p>
-            </a></li>
-            <li><a class="" href="<?php echo $home ?>/shop">
-              <p>店舗建築</p>
-            </a></li>
-            <li><a class="" href="<?php echo $home ?>/large">
-              <p>大型建築</p>
-            </a></li>
-          </ul>
-          <!--sp用サービスメニュー終わり-->
-          <!--PC用サービスメニュー始まり-->
-          <ul class="drawer-dropdown-menu pc-only">
+          <ul class="drawer-dropdown-menu">
             <li><a class="flex drawer-dropdown-menu-item" href="<?php echo $home ?>/order">
               <img src="<?php echo $wp_url ?>/lib/images/common/nav_01.png" alt="注文建築">
               <p>注文建築</p>
@@ -92,7 +74,6 @@ $slug      = $post_data->post_name;
               <p>大型建築</p>
             </a></li>
           </ul>
-          <!--PC用サービスメニュー終わり-->
         </li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
@@ -110,7 +91,52 @@ $slug      = $post_data->post_name;
     </nav>
   </div>
 </header>
-<!-- ヘッダー終了 -->
+
+<!--sp用サービスメニュー始まり-->
+<header id="header" class="sp-only">
+  <div class="wrap">
+    <a href="<?php echo $home ?>">
+      <img src="<?php echo $wp_url ?>/lib/images/common/logo.png" alt="リードアーキテクトロゴ">
+    </a>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only"></span>
+        <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav flex" role="navigation">
+      <ul class="drawer-menu flex">
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item">サービス紹介</a>
+          <ul class="sub-menu">
+            <li><a class="" href="<?php echo $home ?>/order">
+              <p>注文建築</p>
+            </a></li>
+            <li><a class="" href="<?php echo $home ?>/reform">
+              <p>リフォーム</p>
+            </a></li>
+            <li><a class="" href="<?php echo $home ?>/shop">
+              <p>店舗建築</p>
+            </a></li>
+            <li><a class="" href="<?php echo $home ?>/large">
+              <p>大型建築</p>
+            </a></li>
+          </ul>
+        </li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
+        <li class="tel txt-c">
+          <a class="drawer-menu-item" href="tel:075-693-2880">
+            <div class="img-wrap">
+              <img src="<?php echo $wp_url ?>/lib/images/common/tel.png" alt="電話アイコン">
+            </div>
+            <p></p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <!-- メインビジュアル開始 -->
 <div id="pagetop">

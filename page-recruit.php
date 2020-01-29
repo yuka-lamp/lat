@@ -23,7 +23,7 @@ get_header(); ?>
              <br><span class="main-color">■</span>インテリアのデザイン設計監理</p>
         </div>
         <div class="">
-          <h3>仕事内容</h3>
+          <h3>応募資格</h3>
           <p><span class="main-color">■</span>建築・インテリア系の短大卒業以上
              <br><span class="main-color">■</span>建築士資格所有者</p>
         </div>

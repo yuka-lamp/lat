@@ -99,6 +99,7 @@ header ul li.icon .img-wrap {
 /*--ドロップダウンメニュー内--*/
 .drawer-dropdown-menu {
   position: absolute;
+  top: 60px;
 }
 
 .drawer-dropdown-menu li {
@@ -148,6 +149,10 @@ header ul li.icon .img-wrap {
   /*--ナビ崩れの調整--*/
   header>.wrap>nav>ul {
     width: 90%
+  }
+  .pagetop {
+    bottom: 10px;
+    right: 10px;
   }
 }
 

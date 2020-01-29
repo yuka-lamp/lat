@@ -84,115 +84,108 @@ $(document).ready(function() {
   $('.drawer').drawer();
   /*--slick初期化--*/
   $('.slider').slick({
-    autoplay:true,
-    autoplaySpeed:0,
-    dots:false,
-    arrows:false,
-    slidesToShow:6,
-    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    dots: false,
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
     cssEase: 'linear',
     speed: 5000,
-    responsive: [
-     {
+    responsive: [{
       breakpoint: 768, //767px以下のサイズに適用
       settings: {
-        slidesToShow:1.5,
+        slidesToShow: 1.5,
         speed: 10000,
       }
-     }
-   ]
+    }]
   });
   $('.slider-02').slick({
-    autoplay:false,
-    autoplaySpeed:0,
-    Speed:40000,
-    slidesToShow:1,
-    slidesToScroll:1,
-    dots:true,
+    autoplay: false,
+    autoplaySpeed: 0,
+    Speed: 40000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
     customPaging: function(slider, i) {
-    return $('<button type="button" />').text(i + 1);
-  },
+      return $('<button type="button" />').text(i + 1);
+    },
     prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_l.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">',
-    responsive: [
-     {
+    responsive: [{
       breakpoint: 768, //767px以下のサイズに適用
       settings: {
-        slidesToShow:1,
+        slidesToShow: 1,
       }
-     }
-   ]
+    }]
   });
   $('.slider-03').slick({
-    autoplay:true,
-    autoplaySpeed:0,
-    dots:false,
-    arrows:false,
-    slidesToShow:1,
-    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     cssEase: 'linear',
     speed: 40000,
   });
   $('.slider-04').slick({
-    autoplay:true,
-    autoplaySpeed:3000,
-    dots:true,
-    arrows:true,
-    slidesToShow:3,
-    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     customPaging: function(slider, i) {
-    return $('<button type="button" />').text(i + 1);
-  },
+      return $('<button type="button" />').text(i + 1);
+    },
     prevArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_l.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="<?php echo $wp_url ?>/lib/images/common/arrow_r.png" class="slide-arrow next-arrow">',
-    responsive: [
-     {
+    responsive: [{
       breakpoint: 768, //767px以下のサイズに適用
       settings: {
-        slidesToShow:1
+        slidesToShow: 1
       }
-     }
-   ]
+    }]
   });
   $('.slider-fr01').slick({
     dots: true,
+    arrows: false,
     customPaging: function(slider, i) {
       var thumbSrc = $(slider.$slides[i]).find('img').attr('src');
       return '<img src="' + thumbSrc + '">';
     }
   });
   $('.slider-fr02').slick({
-    autoplay:true,
-    autoplaySpeed:0,
-    dots:false,
-    arrows:false,
-    slidesToShow:4,
-    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    dots: false,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     cssEase: 'linear',
     speed: 10000,
-    responsive: [
-     {
+    responsive: [{
       breakpoint: 768, //767px以下のサイズに適用
       settings: {
-        slidesToShow:1.5
+        slidesToShow: 1.5
       }
-     }
-   ]
+    }]
   });
   /*--よくあるご質問--*/
   $(".ac dt").on("click", function() {
-  $(this).next().slideToggle();
-});
-  $('a[href^="#"]').click(function() {
-    var speed = 500;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({
-      scrollTop: position
-    }, speed, "swing");
-    return false;
+    $(this).next().slideToggle();
   });
+  // $('a[href^="#"]').click(function() {
+  //   var speed = 500;
+  //   var href = $(this).attr("href");
+  //   var target = $(href == "#" || href == "" ? 'html' : href);
+  //   var position = target.offset().top;
+  //   $("html, body").animate({
+  //     scrollTop: position
+  //   }, speed, "swing");
+  //   return false;
+  // });
 });
 $(window).on('load scroll', function() {
   // pagetop表示

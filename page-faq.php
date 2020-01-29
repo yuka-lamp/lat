@@ -7,7 +7,7 @@ get_header(); ?>
 
 <section id="faq" class="sec">
   <div class="wrap">
-    <div class="flex">
+    <div class="">
       <h2>私たちについて</h2>
       <div class="table">
         <dl class="ac">
@@ -20,7 +20,7 @@ get_header(); ?>
         </dl>
       </div>
     </div>
-    <div class="flex">
+    <div class="">
       <h2>ゼロ宣言の家</h2>
       <div class="table">
         <dl class="ac">
