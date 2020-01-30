@@ -50,7 +50,7 @@ about
 #about .layout .img-wrap ul li>img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 #about .next-arrow, #about .prev-arrow {
@@ -168,22 +168,57 @@ service
 }
 
 #service ul li .txt-wrap {
-  width: 80%;
+  width: 90%;
   margin: -2rem auto 0 auto;
   background: #fff;
   position: relative;
 }
 
 #service ul li .txt-wrap>div {
-  padding: 20px
+  border-top: 1px solid #EBF0E6;
+  font-weight: bold
+}
+
+#service ul li .txt-wrap>div:nth-child(1) {
+  padding: 20px;
+}
+
+#service ul li .txt-wrap>div a {
+  display:block;
+  padding: 10px 20px;
+  width: 100%;
+  position: relative;
+}
+
+#service ul li .txt-wrap div a::after {
+  content: url('../images/common/arrow_01.png');
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  transition: .5s
+}
+
+#service ul li .txt-wrap>div:hover a {
+  color: #7FC600
+}
+
+#service ul li div>div.flex>div {
+  width: 50%
 }
 
 #service h3 {
   margin: 0
 }
 
-#service .link {
-  border-top: 1px solid #EBF0E6;
+/*--そのただけ2カラム--*/
+
+#service ul li:nth-child(4) .txt-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#service ul li:nth-child(4) .txt-wrap>div {
+  width: 50%
 }
 
 /*--------------------------------------------レスポンシブ*/

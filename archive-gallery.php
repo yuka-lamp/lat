@@ -43,9 +43,10 @@ get_header(); ?>
         <a>
         </p>
         <div class="img-wrap">
-          <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
+          <a href="<?php echo $i; ?>" data-lightbox="Lighboxのグループ名"><img src="thumb-1.jpg" alt="image-1" /></a>
         </div>
         </a>
+
       </li>
     <?php endwhile; endif; ?>
   </ul>

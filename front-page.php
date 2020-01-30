@@ -14,7 +14,7 @@ get_header(); ?>
         'posts_per_page' => 5,
         'orderby' => 'date',
         'order' => 'DESC',
-        'post_type' => 'gallery',
+        'post_type' => 'now',
       );
       $posts = get_posts($arg);
       if ($posts): ?>
@@ -32,14 +32,16 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
+
 <section id="service" class="sec">
   <div class="ttl3">
     <h2>service</h2>
     <p>リードアーキテクトが手掛ける<br>手掛ける建設業</p>
   </div>
+
   <ul class="flex m-60">
     <li>
-      <a href="<?php echo $home ?>/order">
       <div class="img-wrap">
         <img src="<?php echo $wp_url ?>/lib/images/front/service01.png" alt="">
       </div>
@@ -48,15 +50,19 @@ get_header(); ?>
         <p class="main-color b">01</p>
         <h3>注文建築</h3>
         </div>
-        <div class="link flex">
-          <p class="gray">詳しく見る</p>
-          <p class="main-color" href="<?php echo $home ?>/order">READ MORE ■</p>
+        <div class="flex">
+          <a href="<?php echo $home ?>/health-o">
+            <p class="">健康住宅</p>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="<?php echo $home ?>/design-o">
+            <p class="">デザイン住宅</p>
+          </a>
         </div>
       </div>
-      </a>
     </li>
     <li>
-      <a href="<?php echo $home ?>/reform">
       <div class="img-wrap">
         <img src="<?php echo $wp_url ?>/lib/images/front/service02.png" alt="">
       </div>
@@ -65,15 +71,19 @@ get_header(); ?>
           <p class="main-color b">02</p>
           <h3>リフォーム</h3>
         </div>
-        <div class="link flex">
-          <p class="gray">詳しく見る</p>
-          <p class="main-color" href="<?php echo $home ?>/reform">READ MORE ■</p>
+        <div class="flex">
+          <a href="<?php echo $home ?>/health-r">
+            <p class="">健康住宅</p>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="<?php echo $home ?>/design-r">
+            <p class="">デザイン住宅</p>
+          </a>
         </div>
       </div>
-      </a>
     </li>
     <li>
-      <a href="<?php echo $home ?>/shop">
       <div class="img-wrap">
         <img src="<?php echo $wp_url ?>/lib/images/front/service03.png" alt="">
       </div>
@@ -82,15 +92,14 @@ get_header(); ?>
         <p class="main-color b">03</p>
         <h3>店舗建築</h3>
         </div>
-        <div class="link flex">
-          <p class="gray">詳しく見る</p>
-          <p class="main-color" href="<?php echo $home ?>/shop">READ MORE ■</p>
+        <div class="flex">
+          <a href="<?php echo $home ?>/shop">
+            <p class="">詳しく見る</p>
+          </a>
         </div>
       </div>
-      </a>
     </li>
     <li>
-      <a href="<?php echo $home ?>/other">
       <div class="img-wrap">
         <img src="<?php echo $wp_url ?>/lib/images/front/service04.png" alt="">
       </div>
@@ -99,15 +108,32 @@ get_header(); ?>
         <p class="main-color b">04</p>
         <h3>その他</h3>
         </div>
-        <div class="link flex">
-          <p class="gray">詳しく見る</p>
-          <p class="main-color" href="<?php echo $home ?>/other">READ MORE ■</p>
+        <div class="flex">
+          <a href="<?php echo $home ?>/revenue">
+            <p class="">収益物件</p>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="<?php echo $home ?>/special">
+            <p class="">特殊建築</p>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="<?php echo $home ?>/large">
+            <p class="">大型建築</p>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="<?php echo $home ?>/reno">
+            <p class="">リノベーション</p>
+          </a>
         </div>
       </div>
-      </a>
     </li>
   </ul>
 </section>
+
+
 <section id="fr-gallery" class="sec">
   <div class="flex">
     <div class="ttl3">
