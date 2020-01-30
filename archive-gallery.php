@@ -40,13 +40,9 @@ get_header(); ?>
     $cats = get_the_category();
     ?>
       <li>
-        <a>
-        </p>
         <div class="img-wrap">
-          <a href="<?php echo $i; ?>" data-lightbox="Lighboxのグループ名"><img src="thumb-1.jpg" alt="image-1" /></a>
+          <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
         </div>
-        </a>
-
       </li>
     <?php endwhile; endif; ?>
   </ul>

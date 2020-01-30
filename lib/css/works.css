@@ -52,11 +52,12 @@
 #works ul.list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #works ul.list li {
   width: 30%;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 2rem;
   position: relative;
 }

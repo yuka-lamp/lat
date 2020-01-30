@@ -25,7 +25,6 @@
   padding: 5px 15px;
 }
 
-
 #gallery .list-ttl {
   justify-content: space-between;
   align-items: center;
@@ -66,7 +65,7 @@
   transition: 0.5s
 }
 
-#gallery ul.list li a, #gallery ul.list li a .img-wrap, #gallery ul.list li a .img-wrap img {
+#gallery ul.list li .img-wrap, #gallery ul.list li .img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -103,25 +102,28 @@
 }
 
 .lean_overlay {
-    position: fixed;
-    z-index:100;
-    top: 0px;
-    left: 0px;
-    height:100%;
-    width:100%;
-    background: #000;
-    display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
 }
 
 .cap {
-  display:none;
+  display: none;
 }
-
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
+  #gallery ul.list li {
+    width: 100%
+  }
+
   #gallery .list-ttl {
     position: relative;
   }

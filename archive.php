@@ -41,20 +41,22 @@ get_header(); ?>
     $tag = get_the_term_list(get_the_ID(),'post_tag');
     ?>
       <li>
-        <a href="<?php the_permalink(); ?>" class="">
         <p class="tag"><?php echo $tag; ?></p>
-        <div class="img-wrap">
-          <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
-        </div>
-        <div class="txt-wrap">
-        <h3><?php echo $t; ?></h3>
-        <p>
-          <?php foreach ($cats as $category) {
-              echo '<span>by '.$category->name.'</span>';
-          } ?>
-        </p>
-        </div>
-      </a>
+        <a href="<?php the_permalink(); ?>" class="">
+          <div class="img-wrap">
+            <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
+          </div>
+        </a>
+        <a href="<?php the_permalink(); ?>" class="">
+          <div class="txt-wrap">
+          <h3><?php echo $t; ?></h3>
+          <p>
+            <?php foreach ($cats as $category) {
+                echo '<span>by '.$category->name.'</span>';
+            } ?>
+          </p>
+          </div>
+        </a>
       </li>
     <?php endwhile; endif; ?>
   </ul>
