@@ -73,12 +73,12 @@ get_header(); ?>
         </div>
         <div class="flex">
           <a href="<?php echo $home ?>/health-r">
-            <p class="">健康住宅</p>
+            <p class="">健康リフォーム</p>
           </a>
         </div>
         <div class="flex">
           <a href="<?php echo $home ?>/design-r">
-            <p class="">デザイン住宅</p>
+            <p class="">デザインリフォーム</p>
           </a>
         </div>
       </div>

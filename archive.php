@@ -15,7 +15,7 @@ get_header(); ?>
   <div class="wrap">
     <p class="b mb-1">カテゴリ一覧</p>
     <ul>
-      <li><a href="<?php echo $home ?>/gallery">全て</a></li>
+      <li><a href="<?php echo $home ?>/works">全て</a></li>
       <?php wp_list_categories('title_li=&exclude=1'); ?>
     </ul>
   </div>

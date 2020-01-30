@@ -168,7 +168,7 @@ $(document).ready(function() {
     autoplaySpeed: 0,
     dots: false,
     arrows: false,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: 'linear',
     speed: 10000,
@@ -183,6 +183,16 @@ $(document).ready(function() {
   $(".ac dt").on("click", function() {
     $(this).next().slideToggle();
   });
+});
+$(function(){
+    $('.js-modal-open').on('click',function(){
+        $('.js-modal').fadeIn();
+        return false;
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
 });
 
 </script>

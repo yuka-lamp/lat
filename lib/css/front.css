@@ -67,11 +67,13 @@ about
 }
 
 #about .layout .img-wrap::before {
-  content: url('../images/front/stamp.png');
+  content: url('../images/front/stamp.svg');
   position: absolute;
   top: -1rem;
   right: -1rem;
-  z-index: 2
+  z-index: 2;
+  width: 80px;
+   height: 80px
 }
 
 #about .slick-dots {
@@ -288,9 +290,8 @@ gallery
 
 #fr-gallery .ttl3>h2 {
   border: none;
-  padding: none;
   display: block;
-  margin: 0 0 2rem
+  margin: 0 0 1rem
 }
 
 #fr-gallery .ttl3>h2::after {
@@ -306,6 +307,10 @@ gallery
 
 #fr-gallery .btn a {
   min-width: 250px
+}
+
+#fr-gallery .btn {
+  width: 100%
 }
 
 /*--------------------------------------------レスポンシブ*/

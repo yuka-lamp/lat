@@ -5,6 +5,7 @@
 
 #news ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -16,6 +17,7 @@
 
 #news ul li .img-wrap, #news ul li .img-wrap img {
   width: 100%;
+  height: 100%;
 }
 
 #news ul li .img-wrap {
@@ -45,5 +47,6 @@
 @media(max-width:768px) {
   #news ul li {
     width: 100%;
+    margin-top: 2rem
   }
 }

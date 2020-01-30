@@ -18,6 +18,10 @@
 
 #gallery .cat ul li {
   display: inline-block;
+}
+
+#gallery .cat ul a {
+  display: inline-block;
   background: #fff;
   color: #212529;
   margin: 0 5px 5px 0;
@@ -115,6 +119,8 @@
 .cap {
   display: none;
 }
+
+/*--モーダル--*/
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {

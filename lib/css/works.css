@@ -18,6 +18,10 @@
 
 #works .cat ul li {
   display: inline-block;
+}
+
+#works .cat ul a {
+  display: inline-block;
   background: #fff;
   color: #333;
   margin: 0 5px 5px 0;

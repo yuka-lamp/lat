@@ -23,20 +23,19 @@ get_header(); ?>
     $cats = get_the_category();
     $tag = get_the_term_list(get_the_ID(),'post_tag');
     ?>
-      <li>
-        <p class="tag"><?php echo $tag; ?></p>
-        <a href="<?php the_permalink(); ?>" class="">
-          <div class="img-wrap">
-            <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
-          </div>
-        </a>
-        <a href="<?php the_permalink(); ?>" class="">
-          <div class="txt-wrap">
-          <h3><?php echo $t; ?></h3>
-          <p class="gray"><?php the_date(); ?></p>
-          </div>
-        </a>
-      </li>
+    <li>
+      <p class="tag"><?php echo $tag; ?></p>
+      <a href="<?php the_permalink(); ?>" class="">
+        <div class="img-wrap">
+          <img class="" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
+        </div>
+      </a>
+      <a href="<?php the_permalink(); ?>" class="">
+        <div class="txt-wrap">
+        <h3><?php echo $t; ?></h3>
+        </div>
+      </a>
+    </li>
     <?php endwhile; endif; ?>
   </ul>
 <?php get_template_part('pagenav'); ?>

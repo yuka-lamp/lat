@@ -16,12 +16,12 @@ get_header(); ?>
     <p class="b mb-1">カテゴリ一覧</p>
     <ul>
       <a href="<?php echo $home ?>/gallery">全て</a>
-      <?php
+      <!-- <?php
         $terms = get_terms('gallery_cat');
         foreach ( $terms as $term ) {
           echo '<a href="'.get_term_link($term).'">'.$term->name.'</a>';
         }
-      ?>
+      ?> -->
     </ul>
   </div>
 </div>

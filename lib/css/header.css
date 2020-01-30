@@ -280,6 +280,9 @@ header ul li.icon .img-wrap {
   .drawer-menu {
     margin-top: 4rem;
   }
+  header ul li.tel {
+    margin-bottom: 4rem!important
+  }
 }
 
 @media(max-width:480px) {

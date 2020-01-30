@@ -78,7 +78,7 @@ $wp_url = get_template_directory_uri(); ?>
       'orderby' => 'date',
       'order' => 'DESC',
       'post_type' => 'works',
-      'category_name' => 'special',
+      'category_name' => 'renovation',
     );
     $posts = get_posts($arg);
     if ($posts): ?>

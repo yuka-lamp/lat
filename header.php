@@ -70,6 +70,7 @@ $slug      = $post_data->post_name;
           </ul>
         </li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/news">内覧会</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
@@ -113,6 +114,7 @@ $slug      = $post_data->post_name;
           </ul>
         </li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/news">内覧会</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
         <li class="btn"><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
