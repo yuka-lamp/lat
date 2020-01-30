@@ -159,7 +159,8 @@
   #submv_img h2 {
     text-align: center;
     left: 0;
-    width: 100%
+    width: 100%;
+    filter: drop-shadow(0 0 4px rgba(255,255,255,1));
   }
 }
 

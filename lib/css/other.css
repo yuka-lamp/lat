@@ -221,6 +221,8 @@ FAQ
 #contact-form input, #contact-form textarea {
   width: 100% !important;
   padding: .5rem !important;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 #contact-form dd {

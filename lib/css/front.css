@@ -338,4 +338,8 @@ gallery
   #fr-gallery .ttl3::after {
     display: none
   }
+  #fr-gallery .btn a {
+    margin-bottom: 2rem
+  }
+
 }

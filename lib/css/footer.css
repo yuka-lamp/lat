@@ -77,4 +77,7 @@ footer .right ul li a {
 
 @media(max-width:480px) {
   /*--スマホたて--*/
+  footer .left p {
+    white-space: nowrap;
+  }
 }
