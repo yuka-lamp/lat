@@ -42,9 +42,10 @@ if (mb_strlen($t, 'UTF-8') > 28) {
     $t = mb_substr($t, 0, 28, 'UTF-8').'…';
 }
 $i = get_the_post_thumbnail_url(get_the_ID(), 'full');
+$cats = get_the_category();
 ?>
 <li>
-<a href="<?php echo $i; ?>" data-lightbox="<?php echo get_the_ID(); // ユニークなID ?>" data-title="<?php echo $t; // タイトル ?>">
+<a href="<?php echo $i; ?>" data-lightbox="<?php echo get_the_ID(); ?>" data-title="<?php echo $t; ?>">
 <div class="img-wrap">
 <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
 </div>

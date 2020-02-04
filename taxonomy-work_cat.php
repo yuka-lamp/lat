@@ -38,7 +38,7 @@ get_header(); ?>
     }
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
     $cats = get_the_terms(get_the_ID(), 'work_cat');
-    $tag = get_the_term_list(get_the_ID(),'post_tag');
+    $tag = get_the_term_list(get_the_ID(), 'post_tag');
     ?>
       <li>
         <p class="tag"><?php echo $tag; ?></p>

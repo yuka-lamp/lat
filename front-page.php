@@ -19,16 +19,16 @@ get_header(); ?>
       $posts = get_posts($arg);
       if ($posts): ?>
       <ul class="slider-fr01">
-      <?php foreach ($posts as $post):
+      <?php foreach ($posts as $post): setup_postdata($post);
       $i = get_the_post_thumbnail_url(get_the_ID(), 'medium');
       $i_l = get_the_post_thumbnail_url(get_the_ID(), 'large');
       ?>
         <li>
           <img src="<?php echo $i_l; ?>" srcset="<?php echo $i_l; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
         </li>
-      <?php endforeach; ?>
+      <?php endforeach; wp_reset_postdata(); ?>
       </ul>
-      <?php endif; wp_reset_postdata(); ?>
+      <?php endif; ?>
     </div>
   </div>
 </section>
@@ -154,10 +154,10 @@ get_header(); ?>
     if ($posts): ?>
     <div class="slide">
     <ul class="slider-fr02">
-    <?php foreach ($posts as $post):
+    <?php foreach ($posts as $post): setup_postdata($post);
     $i = get_the_post_thumbnail_url(get_the_ID(), 'medium');
     ?>
-    <li><img src="<?php echo $i_l; ?>" alt="<?php echo $t; ?>"></li>
+    <li><img src="<?php echo $i; ?>" alt="<?php echo $t; ?>"></li>
     <?php endforeach; ?>
     </ul>
     <?php endif; wp_reset_postdata(); ?>

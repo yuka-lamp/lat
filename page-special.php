@@ -78,7 +78,13 @@ $wp_url = get_template_directory_uri(); ?>
       'orderby' => 'date',
       'order' => 'DESC',
       'post_type' => 'works',
-      'category_name' => 'special',
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'work_cat',
+          'field' => 'slug',
+          'terms' => 'special'
+        )
+      )
     );
     $posts = get_posts($arg);
     if ($posts): ?>

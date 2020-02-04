@@ -62,7 +62,13 @@ $wp_url = get_template_directory_uri(); ?>
       'orderby' => 'date',
       'order' => 'DESC',
       'post_type' => 'works',
-      'category_name' => 'reform design',
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'work_cat',
+          'field' => 'slug',
+          'terms' => 'reform-design'
+        )
+      )
     );
     $posts = get_posts($arg);
     if ($posts): ?>
@@ -72,7 +78,7 @@ $wp_url = get_template_directory_uri(); ?>
     $i = get_the_post_thumbnail_url(get_the_ID(), 'medium');
     $i_l = get_the_post_thumbnail_url(get_the_ID(), 'large');
     $url = get_permalink();
-    $cats = get_the_category();
+    $cats = get_the_terms(get_the_ID(), 'work_cat');
     $tag = get_the_term_list($post->ID,'post_tag');
     ?>
       <li>

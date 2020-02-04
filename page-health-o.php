@@ -195,7 +195,13 @@ $wp_url = get_template_directory_uri(); ?>
       'orderby' => 'date',
       'order' => 'DESC',
       'post_type' => 'works',
-      'category_name' => 'order health',
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'work_cat',
+          'field' => 'slug',
+          'terms' => 'order-health'
+        )
+      )
     );
     $posts = get_posts($arg);
     if ($posts): ?>

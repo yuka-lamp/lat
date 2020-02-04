@@ -313,6 +313,15 @@ gallery
   width: 100%
 }
 
+#fr-gallery .slick-initialized .slick-slide {
+  height: 210px
+}
+
+#fr-gallery .slick-initialized .slick-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
   /*--スマホよこ--*/

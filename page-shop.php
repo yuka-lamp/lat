@@ -131,7 +131,13 @@ $wp_url = get_template_directory_uri(); ?>
       'orderby' => 'date',
       'order' => 'DESC',
       'post_type' => 'works',
-      'category_name' => 'shop',
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'work_cat',
+          'field' => 'slug',
+          'terms' => 'shop'
+        )
+      )
     );
     $posts = get_posts($arg);
     if ($posts): ?>

@@ -91,7 +91,13 @@ $wp_url = get_template_directory_uri(); ?>
       'orderby' => 'date',
       'order' => 'DESC',
       'post_type' => 'works',
-      'category_name' => 'order-design',
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'work_cat',
+          'field' => 'slug',
+          'terms' => 'order-design'
+        )
+      )
     );
     $posts = get_posts($arg);
     if ($posts): ?>
