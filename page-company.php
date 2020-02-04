@@ -14,7 +14,8 @@ get_header(); ?>
       </li>
       <li class="flex">
         <p>住所</p>
-        <p>京都市南区西九条藤ノ木町97番地</p>
+        <p>京都市南区西九条藤ノ木町97番地
+        <iframe class="mt-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.8969056018277!2d135.74965491492077!3d34.9842469754875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600106029cb40149%3A0xa8725f0e08e9acb8!2z44CSNjAxLTg0MjEg5Lqs6YO95bqc5Lqs6YO95biC5Y2X5Yy66KW_5Lmd5p2h6Jek44OO5pyo55S677yZ77yX!5e0!3m2!1sja!2sjp!4v1580803441189!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
       </li>
       <li class="flex">
         <p>TEL / FAX</p>

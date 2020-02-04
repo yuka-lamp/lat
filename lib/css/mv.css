@@ -2,238 +2,242 @@
 共通
 ------------------------------------------------------*/
 .mv {
-  margin-top: 100px
+margin-top: 100px
 }
 
 .mv h2 {
-  font-size: 26px;
-  letter-spacing: 1.3px
+font-size: 26px;
+letter-spacing: 1.3px
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
 
-  /*--スマホよこ--*/
-  .mv {
-    margin-top: 70px
-  }
+/*--スマホよこ--*/
+.mv {
+margin-top: 70px
+}
 }
 
 @media(max-width:480px) {
-  /*--スマホたて--*/
+/*--スマホたて--*/
 }
 
 /*------------------------------------------------------
 トップページ
 ------------------------------------------------------*/
 #mv-front {
-  background: url('../images/front/mv.png');
-  background-size: cover;
-  height: 36vw;
-  position: relative;
-  margin: 150px 0 100px 0
+background: url('../images/front/mv.png');
+background-size: cover;
+height: 36vw;
+position: relative;
+margin: 150px 0 100px 0
 }
 
 #mv-front .txt-wrap {
-  position: absolute;
-  left: 0;
-  bottom: 33%;
-  padding: 0 0 0 2.5rem
+position: absolute;
+left: 0;
+bottom: 33%;
+padding: 0 0 0 2.5rem
 }
 
 #mv-front .img-wrap {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0 0 0 2.5rem
+position: absolute;
+left: 0;
+bottom: 0;
+padding: 0 0 0 2.5rem
 }
 
 #mv-front .txt-wrap h2 {
-  font-size: 53px;
-  margin: 0;
-  color: #7FC600
+font-size: 53px;
+margin: 0;
+color: #7FC600
 }
 
 #mv-front .txt-wrap p {
-  font-size: 1.25rem;
-  font-weight: bold;
-  line-height: 1.5rem;
-  margin-top: 1rem
+font-size: 1.25rem;
+font-weight: bold;
+line-height: 1.5rem;
+margin-top: 1rem
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
 
-  /*--スマホよこ--*/
-  #mv-front {
-    height: 430px;
-    margin: 60px 0 0 0
-  }
+/*--スマホよこ--*/
+#mv-front {
+height: 430px;
+margin: 60px 0 0 0
+}
 }
 
 @media(max-width:480px) {
 
-  /*--スマホたて--*/
-  #mv-front .txt-wrap {
-    padding: 0 0 0 1rem;
-    margin: 0 0 2rem 0;
-    bottom: 10%;
-  }
+/*--スマホたて--*/
+#mv-front .txt-wrap {
+padding: 0 0 0 1rem;
+margin: 0 0 2rem 0;
+bottom: 10%;
+}
 
-  #mv-front .img-wrap {
-    padding: 0 0 0 1rem
-  }
+#mv-front .img-wrap {
+padding: 0 0 0 1rem
+}
 
-  #mv-front .txt-wrap h2 {
-    font-size: 3rem;
-  }
+#mv-front .txt-wrap h2 {
+font-size: 3rem;
+}
 
-  #mv-front {
-    background: url('../images/front/mv_sp.png');
-    background-size: cover;
-    height: 140vw;
-  }
+#mv-front {
+background: url('../images/front/mv_sp.png');
+background-size: cover;
+height: 140vw;
+}
 }
 
 /*------------------------------------------------------
 下層MV画像なし
 ------------------------------------------------------*/
 #submv_imgnone {
-  background: #E6EBE1;
-  padding: 40px 0 40px 60px;
+background: #E6EBE1;
+padding: 40px 0 40px 60px;
 }
 
 #submv_imgnone h2, #submv_list p {
-  display: inline-block;
-  margin: 0
+display: inline-block;
+margin: 0
 }
 
 #submv_imgnone p {
-  text-transform: uppercase;
-  display: inline;
+text-transform: uppercase;
+display: inline;
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
 
-  /*--スマホよこ--*/
-  #submv_imgnone {
-    padding: 40px 0 40px 10px;
-  }
+/*--スマホよこ--*/
+#submv_imgnone {
+padding: 40px 0 40px 10px;
+}
 
-  #submv_imgnone h2, #submv_list p {
-    display: block;
-  }
+#submv_imgnone h2, #submv_list p {
+display: block;
+}
+
+#submv_imgnone p {
+margin: 0
+}
 }
 
 @media(max-width:480px) {
-  /*--スマホたて--*/
+/*--スマホたて--*/
 }
 
 /*------------------------------------------------------
 下層MV 画像あり
 ------------------------------------------------------*/
 #submv_img {
-  width: 100%;
-  height: 240px;
-  background: url('../images/order/mv.png');
-  background-position: right;
-  background-size: cover;
-  position: relative;
+width: 100%;
+height: 240px;
+background: url('../images/order/mv.png');
+background-position: right;
+background-size: cover;
+position: relative;
 }
 
 #submv_img h2 {
-  position: absolute;
-  top: 50%;
-  left: 4rem;
-  margin: -1rem 0 0 0;
+position: absolute;
+top: 50%;
+left: 4rem;
+margin: -1rem 0 0 0;
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
 
-  /*--スマホよこ--*/
-  #submv_img {
-    height: 180px;
-  }
+/*--スマホよこ--*/
+#submv_img {
+height: 180px;
+}
 
-  #submv_img h2 {
-    text-align: center;
-    left: 0;
-    width: 100%;
-    filter: drop-shadow(0 0 4px rgba(255,255,255,1));
-  }
+#submv_img h2 {
+text-align: center;
+left: 0;
+width: 100%;
+filter: drop-shadow(0 0 4px rgba(255,255,255,1));
+}
 }
 
 @media(max-width:480px) {
-  /*--スマホたて--*/
+/*--スマホたて--*/
 }
 
 /*------------------------------------------------------
 各ページ画像設定
 ------------------------------------------------------*/
 #submv_img.order {
-  background: url('../images/order/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/order/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.reform {
-  background: url('../images/reform/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/reform/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.shop {
-  background: url('../images/shop/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/shop/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.large {
-  background: url('../images/large/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/large/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.health-o {
-  background: url('../images/health-o/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/health-o/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.design-o {
-  background: url('../images/design-o/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/design-o/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.health-r {
-  background: url('../images/health-r/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/health-r/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.design-r {
-  background: url('../images/design-r/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/design-r/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.consul {
-  background: url('../images/consul/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/consul/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.revenue {
-  background: url('../images/revenue/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/revenue/mv.png');
+background-position: right;
+background-size: cover;
 }
 
 #submv_img.special {
-  background: url('../images/special/mv.png');
-  background-position: right;
-  background-size: cover;
+background: url('../images/special/mv.png');
+background-position: right;
+background-size: cover;
 }

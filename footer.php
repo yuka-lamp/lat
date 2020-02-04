@@ -33,7 +33,6 @@ if (!is_home() && !is_front_page()) {
             <li><a href="<?php echo $home ?>/gallery">ギャラリー</a></li>
             <li><a href="<?php echo $home ?>/faq">よくあるご質問</a></li>
             <li><a href="<?php echo $home ?>/recruit">採用情報</a></li>
-            <li><a href="<?php echo $home ?>/news">内覧会</a></li>
           </ul>
         </div>
         <div>
@@ -44,7 +43,7 @@ if (!is_home() && !is_front_page()) {
               <li><a href="<?php echo $home ?>/design-o">デザイン住宅</a></li>
               <li><a href="<?php echo $home ?>/health-r">健康リフォーム</a></li>
               <li><a href="<?php echo $home ?>/design-r">デザインリフォーム</a></li>
-              <li><a href="<?php echo $home ?>/shop">店舗コンサル</a></li>
+              <li><a href="<?php echo $home ?>/shop">店舗コンサルティング</a></li>
             </ul>
             <ul>
               <li><a href="<?php echo $home ?>/revenue">収益物件</a></li>

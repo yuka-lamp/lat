@@ -2,320 +2,324 @@
 会社概要
 ------------------------------------------------------*/
 #company {
-  padding: 0 0 60px 0
+padding: 0 0 60px 0;
+text-transform: none;
 }
 
 #company ul {
-  width: 80%;
-  border-top: 1px solid #EBF0E6
+width: 80%;
+border-top: 1px solid #EBF0E6
 }
 
 #company ul li {
-  text-align: left;
-  padding: 10px;
-  border-bottom: 1px solid #EBF0E6
+text-align: left;
+padding: 10px;
+border-bottom: 1px solid #EBF0E6
 }
 
 #company ul li p {
-  margin: 0 30px;
+margin: 0 30px;
 }
 
 #company ul li p:first-child {
-  width: 30%
+width: 30%
 }
 
 #company ul li p:last-child {
-  width: 70%
+width: 70%
 }
 
 #perfor .ttl2 {
-  font-size: 1.5rem
+font-size: 1.5rem
 }
 
 #perfor .flex {
-  justify-content: center;
-  padding: 40px 0 !important
+justify-content: center;
+padding: 40px 0 !important
 }
 
 #perfor .flex span {
-  font-size: 4rem;
-  margin: -10px .5rem 0 .5rem
+font-size: 4rem;
+margin: -10px .5rem 0 .5rem
 }
 
 #perfor .flex p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-  align-items: center;
-  display: flex;
+font-size: 1.5rem;
+font-weight: bold;
+margin: 0;
+align-items: center;
+display: flex;
 }
 
 #perfor .flex p:nth-child(2) {
-  margin: 0 3rem
+margin: 0 3rem
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
-  /*--スマホよこ--*/
+/*--スマホよこ--*/
 }
 
 @media(max-width:480px) {
 
-  /*--スマホたて--*/
-  #company {
-    padding: 0 0 40px 0
-  }
+/*--スマホたて--*/
+#company {
+padding: 0 0 40px 0
+}
 
-  #company ul {
-    width: 100%
-  }
+#company ul {
+width: 100%
+}
 
-  #company ul li p {
-    margin: 0 10px;
-  }
+#company ul li p {
+margin: 0 10px;
+}
 
-  #company ul li p:first-child {
-    width: 100%
-  }
+#company ul li p:first-child {
+width: 100%
+}
 
-  #company ul li p:last-child {
-    width: 100%
-  }
+#company ul li p:last-child {
+width: 100%
+}
 
-  #perfor .flex p {
-    margin: -3rem 0
-  }
+#perfor .flex p {
+margin: -3rem 0
+}
 }
 
 /*------------------------------------------------------
 FAQ
 ------------------------------------------------------*/
 #faq h2 {
-  font-size: 1.15rem;
-  width: 100%
+font-size: 1.15rem;
+width: 100%
 }
 
 #faq .table {
-  width: 100%
+width: 100%
 }
 
 #faq>.wrap>div {
-  margin-bottom: 2rem
+margin-bottom: 2rem
 }
 
 #faq dl:first-child {
-  border-top: 1px solid #EBF0E6
+border-top: 1px solid #EBF0E6
 }
 
 #faq dl {
-  margin: 0;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #EBF0E6;
-  cursor: pointer;
-  position: relative;
-  padding: 1.5rem 3rem;
+margin: 0;
+padding: 1.5rem 0;
+border-bottom: 1px solid #EBF0E6;
+cursor: pointer;
+position: relative;
+padding: 1.5rem 3rem;
 }
 
 #faq dl dt {
-  font-weight: bold;
-  position: relative;
-  display: inline;
+font-weight: bold;
+position: relative;
+display: inline;
 }
 
 #faq dl dd {
-  margin-top: 1.5rem;
-  display: none;
-  font-size: 0.9rem
+margin-top: 1.5rem;
+display: none;
+font-size: 0.9rem
 }
 
 #faq dl::before {
-  content: 'Q';
-  font-size: 22px;
-  margin-right: 1rem;
-  color: #7FC600;
-  position: absolute;
-  left: 10px;
-  top: 30%
+content: 'Q';
+font-size: 22px;
+margin-right: 1rem;
+color: #7FC600;
+position: absolute;
+left: 10px;
+top: 30%
 }
 
 #faq dl::after {
-  content: '+';
-  font-size: 2rem;
-  color: #E6EBE1;
-  position: absolute;
-  right: 30px;
-  top: 20%
+content: '+';
+font-size: 2rem;
+color: #E6EBE1;
+position: absolute;
+right: 30px;
+top: 20%
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
-  /*--スマホよこ--*/
+/*--スマホよこ--*/
 }
 
 @media(max-width:480px) {
-  #faq dl {
-    margin: 0;
-    border-bottom: 1px solid #EBF0E6;
-    cursor: pointer;
-  }
+#faq dl {
+margin: 0;
+border-bottom: 1px solid #EBF0E6;
+cursor: pointer;
+}
 
-  #faq dl::after {
-    right: 5px;
-    top: 30%;
-  }
+#faq dl::after {
+right: 5px;
+top: 30%;
+}
 }
 
 /*------------------------------------------------------
 採用ページ
 ------------------------------------------------------*/
 #recruit .flex>div {
-  width: 49%;
+width: 49%;
 }
 
 #recruit .flex .right div {
-  border: 1px solid #EBF0E6;
-  padding: 2rem;
-  margin-top: 2rem
+border: 1px solid #EBF0E6;
+padding: 2rem;
+margin-top: 2rem
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
-  /*--スマホよこ--*/
+/*--スマホよこ--*/
 }
 
 @media(max-width:480px) {
-  #recruit .flex>div {
-    width: 100%;
-  }
+#recruit .flex>div {
+width: 100%;
+}
 }
 
 /*------------------------------------------------------
 お問い合わせ
 ------------------------------------------------------*/
 #contact-form form {
-  width: 60%;
-  margin: 0 auto;
-  box-sizing: border-box;
+width: 60%;
+margin: 0 auto;
+box-sizing: border-box;
 }
 
 .haveto {
-  background: #7FC600 !important;
-  border-radius: 4px !important;
-  color: #fff !important;
-  font-size: 0.8rem !important;
-  padding: 3px 9px !important;
-  margin: .1rem 0 0 .3rem !important;
+background: #7FC600 !important;
+border-radius: 4px !important;
+color: #fff !important;
+font-size: 0.8rem !important;
+padding: 3px 9px !important;
+margin: .1rem 0 0 .3rem !important;
 }
 
 #contact-form input {
-  text-align: left;
-  color: #333;
-  padding-top: 1rem .5rem !important;
+text-align: left;
+color: #333;
+padding-top: 1rem .5rem !important;
 }
 
 #contact-form input, #contact-form textarea {
-  display: block;
-  margin-bottom: 1rem;
+display: block;
+margin-bottom: 1rem;
 }
 
 #contact-form input, #contact-form textarea {
-  width: 100% !important;
-  padding: .5rem !important;
-  overflow: hidden;
-  box-sizing: border-box;
+width: 100% !important;
+padding: .5rem !important;
+overflow: hidden;
+box-sizing: border-box;
 }
 
 #contact-form dd {
-  margin-inline-start: 0 !important;
-  margin-top: 1rem
+margin-inline-start: 0 !important;
+margin-top: 1rem
 }
 
 #contact-form .wpcf7-radio span.wpcf7-list-item {
-  display: flex !important;
-  justify-content: flex-start !important;
+display: flex !important;
+justify-content: flex-start !important;
 }
 
 #contact-form .wpcf7-radio input {
-  display: inline-block;
-  width: 35px !important;
+display: inline-block;
+width: 35px !important;
 }
 
 #contact-form button, #contact-form input[type="submit"] {
-  width: 240px !important;
-  margin: 2rem auto !important;
-  text-align: center;
+width: 240px !important;
+margin: 2rem auto !important;
+text-align: center;
 }
 
 /*--------------------------------------------レスポンシブ*/
 @media(max-width:768px) {
-  /*--スマホよこ--*/
+/*--スマホよこ--*/
 }
 
 @media(max-width:480px) {
-  #contact-form form {
-    width: 100%;
-  }
+#contact-faq p {
+text-align: left;
+}
+#contact-form form {
+width: 100%;
+}
 
-  #contact-form form p:first-child, #contact-form form p label span {
-    width: 100%
-  }
+#contact-form form p:first-child, #contact-form form p label span {
+width: 100%
+}
 }
 
 /*------------------------------------------------------
 特殊建築
 ------------------------------------------------------*/
 #special .flex {
-  width: 100%
+width: 100%
 }
 
 #special .flex>div {
-  width: 49%
+width: 49%
 }
 
 #special>div:last-child {
-  padding: 60px 0 0 0
+padding: 60px 0 0 0
 }
 
 @media(max-width:480px) {
-  #special .flex>div {
-    width: 100%
-  }
+#special .flex>div {
+width: 100%
+}
 }
 
 /*------------------------------------------------------
 リフォーム-health
 ------------------------------------------------------*/
 #health-r .next-arrow {
-  left: auto;
-  right: -10px !important;
+left: auto;
+right: -10px !important;
 }
 
 #health-r .prev-arrow {
-  left: -10px !important;
-  right: auto;
+left: -10px !important;
+right: auto;
 }
 
 #health-r ul.ul-style-01 li {
-  padding: 1rem 0 0 0;
+padding: 1rem 0 0 0;
 }
 
 #health-r ul.ul-style-01 li .img-wrap img {
-  width: 100%
+width: 100%
 }
 
 #health-r .slick-dots {
-  bottom: -60px;
+bottom: -60px;
 }
 
 @media(max-width:480px) {
-  #health-r .next-arrow, #health-r .prev-arrow {
-    top: 50% !important
-  }
+#health-r .next-arrow, #health-r .prev-arrow {
+top: 50% !important
+}
 }
 
 /*------------------------------------------------------
 slider-o1
 ------------------------------------------------------*/
 .slick-slide {
-  margin: 0 5px;
+margin: 0 5px;
 }

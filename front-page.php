@@ -20,11 +20,16 @@ get_header(); ?>
       if ($posts): ?>
       <ul class="slider-fr01">
       <?php foreach ($posts as $post): setup_postdata($post);
+      $t = get_the_title();
+      if (mb_strlen($t, 'UTF-8') > 28) {
+          $t = mb_substr($t, 0, 28, 'UTF-8').'…';
+      }
       $i = get_the_post_thumbnail_url(get_the_ID(), 'medium');
       $i_l = get_the_post_thumbnail_url(get_the_ID(), 'large');
       ?>
         <li>
           <img src="<?php echo $i_l; ?>" srcset="<?php echo $i_l; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
+          <p><?php echo $t; ?></p>
         </li>
       <?php endforeach; wp_reset_postdata(); ?>
       </ul>
@@ -94,7 +99,7 @@ get_header(); ?>
         </div>
         <div class="flex">
           <a href="<?php echo $home ?>/shop">
-            <p class="">詳しく見る</p>
+            <p class="">店舗コンサルティング</p>
           </a>
         </div>
       </div>
@@ -106,7 +111,7 @@ get_header(); ?>
       <div class="txt-wrap">
         <div>
         <p class="main-color b">04</p>
-        <h3>その他</h3>
+        <h3>その他建築</h3>
         </div>
         <div class="flex">
           <a href="<?php echo $home ?>/revenue">
