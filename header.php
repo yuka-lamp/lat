@@ -67,31 +67,32 @@ $slug      = $post_data->post_name;
             <li>
               <h3 class="menu-ttl">リフォーム</h3>
               <div class="">
-                <a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/health-r">健康リフォーム</a>
-                <a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/design-r">デザインリフォーム</a>
+                <a href="<?php echo $home ?>/health-r">健康リフォーム</a>
+                <a href="<?php echo $home ?>/design-r">デザインリフォーム</a>
               </div>
             </li>
             <li>
               <h3 class="menu-ttl">店舗建築</h3>
               <div class="">
-                <a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/shop">店舗コンサルティング</a>
+                <a href="<?php echo $home ?>/shop">店舗コンサルティング</a>
               </div>
             </li>
             <li>
               <h3 class="menu-ttl">その他建築</h3>
               <div class="">
-                <a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/revenue">収益物件</a>
-                <a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/special">特殊建築</a>
-                <a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/large">大型建築</a>
-                <a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/reno">リノベーション</a>
+                <a href="<?php echo $home ?>/revenue">収益物件</a>
+                <a href="<?php echo $home ?>/special">特殊建築</a>
+                <a href="<?php echo $home ?>/large">大型建築</a>
+                <a href="<?php echo $home ?>/reno">リノベーション</a>
               </div>
             </li>
           </ul>
         </li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/faq">よくあるご質問</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
-        <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
+        <!-- <li><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
         <li class="tel txt-c">
           <a class="drawer-menu-item" href="tel:075-693-2880">
             <div class="img-wrap">
@@ -99,7 +100,11 @@ $slug      = $post_data->post_name;
             </div>
             <p></p>
           </a>
-        </li>
+        </li> -->
+      </ul>
+      <ul class="flex telmail">
+        <li class="icon-tel"><a class="drawer-menu-item" href="tel:0756932880"><i class="fas fa-phone mr-1"></i></a></li>
+        <li class="icon-mail"><a class="drawer-menu-item" href="<?php echo $home;?>/contact"><i class="far fa-envelope mr-1"></i></a></li>
       </ul>
     </nav>
   </div>
@@ -120,24 +125,41 @@ $slug      = $post_data->post_name;
         <li class="drawer-dropdown">
           <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">サービス紹介<span class="drawer-caret"></span></a>
           <ul class="drawer-dropdown-menu">
-            <li class="menu-ttl">注文建築</li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/health-o">健康住宅</a></li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/design-o">デザイン住宅</a></li>
-            <li class="menu-ttl">リフォーム</li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/health-r">健康リフォーム</a></li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/design-r">デザインリフォーム</a></li>
-            <li class="menu-ttl">店舗建築</li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/shop">店舗コンサルティング</a></li>
-            <li class="menu-ttl">その他建築</li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/revenue">収益物件</a></li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/special">特殊建築</a></li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/large">大型建築</a></li>
-            <li><a class="drawer-dropdown-menu-item" href="<?php echo $home ?>/reno">リノベーション</a></li>
+            <li>
+              <h3 class="menu-ttl">注文建築</h3>
+              <div class="">
+                <a href="<?php echo $home ?>/health-o">健康住宅</a>
+                <a href="<?php echo $home ?>/design-o">デザイン住宅</a>
+              </div>
+            </li>
+            <li>
+              <h3 class="menu-ttl">リフォーム</h3>
+              <div class="">
+                <a href="<?php echo $home ?>/health-r">健康リフォーム</a>
+                <a href="<?php echo $home ?>/design-r">デザインリフォーム</a>
+              </div>
+            </li>
+            <li>
+              <h3 class="menu-ttl">店舗建築</h3>
+              <div class="">
+                <a href="<?php echo $home ?>/shop">店舗コンサルティング</a>
+              </div>
+            </li>
+            <li>
+              <h3 class="menu-ttl">その他建築</h3>
+              <div class="">
+                <a href="<?php echo $home ?>/revenue">収益物件</a>
+                <a href="<?php echo $home ?>/special">特殊建築</a>
+                <a href="<?php echo $home ?>/large">大型建築</a>
+                <a href="<?php echo $home ?>/reno">リノベーション</a>
+              </div>
+            </li>
           </ul>
         </li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/works">事例紹介</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/company">会社概要</a></li>
         <li><a class="drawer-menu-item" href="<?php echo $home ?>/recruit">採用情報</a></li>
+        <li><a class="drawer-menu-item" href="<?php echo $home ?>/faq">よくあるご質問</a></li>
         <li class="btn"><a class="drawer-menu-item" href="<?php echo $home ?>/contact">お問い合わせ</a></li>
         <li class="tel txt-c">
           <a class="drawer-menu-item" href="tel:075-693-2880">

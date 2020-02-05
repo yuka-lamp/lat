@@ -144,9 +144,6 @@ get_header(); ?>
     <div class="ttl3">
       <h2>gallery</h2>
       <p>リードアーキテクトが<br>今までお任せいただいた施工</p>
-      <div class="btn mt-1">
-        <a href="<?php echo $home;?>/gallery">ギャラリーページへ</a>
-      </div>
     </div>
     <?php
     $arg = array(
